@@ -13,14 +13,110 @@ body {
 
   font-family: 'Roboto', sans-serif;
 }
+
+/* Header */
+
+header {
+  font-family: 'Goldman';
+  background-color: rgb(250, 250, 250);
+  margin-bottom: 1.5rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+main {
+  padding: 2rem 8rem;
+}
+
+.container {
+  margin: 2rem auto;
+  border: solid 0.5px;
+  border-color: rgb(214, 214, 214);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 4px #ddd;
+}
 /* Informações da O.S */
 
-#informacoesOS {
+
+#informacoesOs h3 {
+font-family: 'Goldman';
+
+}
+
+#lista {
+  list-style-type: none;
+  
+}
+
+#solicitante {
+  color: #007bff;
+  font-weight: 700;
+}
+
+#lista li {
+  padding: 0.5rem 1rem;
+}
+
+#lista li:last-child {
+
+}
+
+/* Processamentos */
+
+
+.cabecario {
+  background-color: #efefef;
+  display: flex;
+  padding: 1rem;
+  border: 0.5px solid #dedede;
+  align-items: center;
+}
+
+.cabecario button {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+
+}
+
+.cabecario button:hover {
+  background-color: #0268d4;
+  transition: .2s;
+  cursor: pointer;
+}
+
+#processamentos h3 {
+  font-family: 'Goldman';
+  margin-right: 0.5rem;
+  }
+
+#processamentos ul {
+  list-style: none;
+}
+
+#processamentos li {
+  padding: 0.5rem 1rem;
+
+}
+
+#autor {
+  color: #007bff;
+  font-weight: 500;
+}
+
+#status {
 
 }
 
 /* footer */
 footer {
+  margin: 0;
   background-color:rgb(241, 241, 241);
   display: flex;
   flex-direction: column;
