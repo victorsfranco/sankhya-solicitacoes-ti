@@ -47,32 +47,10 @@
       <div class="container" id="processamentos">
         <div class="cabecario">
           <h3>Atividades Recentes</h3>
-          <button>Incluir Retorno</button>
+          <button onclick="incluirRetorno()">Incluir Retorno</button>
         </div>
-
-        <ul>
-          <li id="autor">MYKAELSON.SOUSA</li>
-          <li id="status">CONCLUÍDA - 03/08/2022 17:33:47</li>
-          <li>
-            A regra diz que se o "Cód. Contrato de T.I." for igual ao novo e se
-            o "Tipo de Contrato" for diferente do que esta inserindo, então não
-            permitirá a alteração. Em outras palavras, o lançamento não permite
-            a alteração do tipo de contrato.
-          </li>
-        </ul>
       </div>
-      <div id="incluirRetorno">
-        <div>
-          <label for="encerrarOs">Encerrar O.S:</label>
-          <select name="encerrarOs" id="">
-            <option value="1">Sim</option>
-            <option value="2">Não</option>
-          </select>
-        </div>
-        <label for="retorno">Retorno:</label>
-        <textarea name="retorno" id="" cols="30" rows="10"> </textarea>
-        <button>Enviar</button>
-      </div>
+      <div id="retorno"></div>
     </main>
     <footer id="footer">
       <h3>Kothe</h3>
