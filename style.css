@@ -38,14 +38,38 @@ main {
   box-shadow: 1px 1px 4px #ddd;
 }
 
+.cabecario {
+  background-color: #f4f6f9;
+  display: flex;
+  padding: 1rem;
+  border: 0.5px solid #dedede;
+  align-items: center;
+}
+
+.alternaVisualizacao {
+  background-color: #f4f6f9;
+  color: #007bff;
+  border: none;
+  font-size: 2rem;
+}
+
+.alternaVisualizacao:hover {
+  cursor: pointer;
+}
+
 /* Informações da O.S */
 
-#informacoesOs h3 {
+#cabecarioInformacoesOS {
+  display: flex;
+  justify-content: space-between;
+}
+
+#informacoesOS h3 {
 font-family: 'Goldman';
 
 }
 
-#lista {
+#listaDetalhesOS {
   list-style-type: none;
   
 }
@@ -55,22 +79,13 @@ font-family: 'Goldman';
   font-weight: 700;
 }
 
-#lista li {
+#listaDetalhesOS li {
   padding: 0.5rem 1rem;
 }
 
 /* Processamentos */
 
-
-.cabecario {
-  background-color: #f4f6f9;
-  display: flex;
-  padding: 1rem;
-  border: 0.5px solid #dedede;
-  align-items: center;
-}
-
-.cabecario button {
+#botaoIncluirRetorno {
   background-color: #007bff;
   color: #fff;
   font-weight: 600;
@@ -80,7 +95,7 @@ font-family: 'Goldman';
 
 }
 
-.cabecario button:hover {
+#botaoIncluirRetorno:hover {
   background-color: #0268d4;
   transition: .2s;
   cursor: pointer;
@@ -104,7 +119,6 @@ font-family: 'Goldman';
   color: #007bff;
   font-weight: 500;
 }
-
 
 /* Incluir Retorno */
 
@@ -138,12 +152,6 @@ font-family: 'Goldman';
   resize: none;
 }
 
-/* #incluirRetorno textarea:hover {
-  margin: 0.5rem 0 1rem 0;
-  font-weight: 500;
-  border: none;
-} */
-
 #incluirRetorno button {
   color: #fff;
   background-color: #007bff;
@@ -158,7 +166,9 @@ font-family: 'Goldman';
   transition: .2s;
   cursor: pointer;
 }
+
 /* footer */
+
 footer {
   margin: 0;
   background-color:#f4f6f9;

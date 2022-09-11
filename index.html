@@ -18,9 +18,12 @@
       <h1>Solicitações T.I</h1>
     </header>
     <main>
-      <div class="container" id="informacoesOs">
-        <h3 class="cabecario">#34367 . Erro ao alterar tipo de Contrato</h3>
-        <ul id="lista">
+      <div class="container" id="informacoesOS">
+        <div class="cabecario" id="cabecarioInformacoesOS">
+          <h3>#34367 . Erro ao alterar tipo de Contrato</h3>
+          <button onclick="ocultarDetalhesOS()" class="alternaVisualizacao">-</button>
+        </div>
+        <ul id="listaDetalhesOS">
           <li id="solicitante">166818 - VICTOR ANTONIO SILVA FRANCO</li>
           <li id="departamento">TI - TECNOLOGIA INFORMAÇÃO-AUX</li>
           <li id="sistema">
@@ -47,7 +50,8 @@
       <div class="container" id="processamentos">
         <div class="cabecario">
           <h3>Atividades Recentes</h3>
-          <button onclick="incluirRetorno()">Incluir Retorno</button>
+          <button id="botaoIncluirRetorno" onclick="incluirRetorno()">Incluir Retorno</button>
+          <button onclick="ocultarProcessamentosOS()" class="alternaVisualizacao" id="botaoOcultaProcessamentos">-</button>
         </div>
       </div>
       <div id="retorno"></div>
