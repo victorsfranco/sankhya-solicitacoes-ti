@@ -13,27 +13,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solicitações T.I</title>
   </head>
+
   <body>
     <header>
       <h1>Solicitações T.I</h1>
     </header>
+
     <main>
-      <div class="container" id="informacoesOS">
+      <section class="container" id="informacoesOS">
         <div class="cabecario" id="cabecarioInformacoesOS">
           <h3>#34367 . Erro ao alterar tipo de Contrato</h3>
-          <button onclick="ocultarDetalhesOS()" class="alternaVisualizacao">-</button>
+          <button onclick="ocultarDetalhesOS()" class="alternaVisualizacao">
+            -
+          </button>
         </div>
+
         <ul id="listaDetalhesOS">
           <li id="solicitante">166818 - VICTOR ANTONIO SILVA FRANCO</li>
+
           <li id="departamento">TI - TECNOLOGIA INFORMAÇÃO-AUX</li>
+
           <li id="sistema">
             Sistema:
             <span> Sankhya - Kothe</span>
           </li>
+
           <li id="status">
             Status:
             <span> Encerrada</span>
           </li>
+
           <li id="descricao">
             Descrição:
             <span
@@ -46,20 +55,49 @@
             >
           </li>
         </ul>
-      </div>
-      <div class="container" id="processamentos">
-        <div class="cabecario">
+      </section>
+
+      <section class="container">
+        <div class="cabecario" id="cabecarioProcessamentos">
           <h3>Atividades Recentes</h3>
-          <button id="botaoIncluirRetorno" onclick="incluirRetorno()">Incluir Retorno</button>
-          <button onclick="ocultarProcessamentosOS()" class="alternaVisualizacao" id="botaoOcultaProcessamentos">-</button>
+
+          <button id="botaoIncluirRetorno" onclick="incluirRetorno()">
+            Incluir Retorno
+          </button>
+
+          <button
+            onclick="ocultarProcessamentosOS()"
+            class="alternaVisualizacao"
+            id="botaoOcultaProcessamentos"
+          >
+            -
+          </button>
         </div>
-      </div>
-      <div id="retorno"></div>
+        <div id="respostaProcessamento">
+          <div id="incluirRetorno">
+            <div>
+              <label for="encerrarOS">Encerrar O.S:</label>
+              <select name="encerrarOS" id="encerra">
+                <option value="1">Sim</option>
+                <option value="2">Não</option>
+              </select>
+            </div>
+            <label for="retorno">Retorno:</label>
+            <textarea name="retorno" id="resposta" cols="30" rows="10">
+            </textarea>
+            <button onclick="enviar()">Enviar</button>
+          </div>
+          <div id="processamentosExistentes"></div>
+        </div>
+      </section>
     </main>
+
     <footer id="footer">
       <h3>Kothe</h3>
+
       <p>Depto. Desenvolvimento - &copy; Direitos Reservados</p>
     </footer>
+
     <script src="index.js"></script>
   </body>
 </html>

@@ -95,22 +95,27 @@ font-family: 'Goldman';
 
 }
 
+#respostaProcessamento {
+  display: none;
+  margin: 1rem;
+}
+
 #botaoIncluirRetorno:hover {
   background-color: #0268d4;
   transition: .2s;
   cursor: pointer;
 }
 
-#processamentos h3 {
+#cabecarioProcessamentos h3 {
   font-family: 'Goldman';
   margin-right: 0.5rem;
   }
 
-#processamentos ul {
+#respostaProcessamento ul {
   list-style: none;
 }
 
-#processamentos li {
+#respostaProcessamento li {
   padding: 0.5rem 1rem;
 
 }
@@ -118,6 +123,11 @@ font-family: 'Goldman';
 #autor {
   color: #007bff;
   font-weight: 500;
+}
+
+#botaoOcultaProcessamentos {
+  position: absolute;
+  right: 9rem;
 }
 
 /* Incluir Retorno */
