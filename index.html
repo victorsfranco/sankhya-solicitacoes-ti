@@ -22,40 +22,35 @@
     <main>
       <section class="container" id="detalhesOS">
         <div class="cabecario" id="cabecarioDetalhesOS">
-          <h3>#34367 . Erro ao alterar tipo de Contrato</h3>
+          <h3>
+            <span id="numeroUnicoOS"></span> -
+            <span id="tituloOS"></span>
+          </h3>
           <button
             onclick="ocultarDetalhesOS()"
             class="botaoAlternaVisualizacao"
-          >
-            -
-          </button>
+            id="botaoOcultaDetalhesOS"
+          ></button>
         </div>
 
         <ul id="listaDetalhesOS">
-          <li id="solicitante">166818 - VICTOR ANTONIO SILVA FRANCO</li>
+          <li id="solicitante"></li>
 
-          <li id="departamento">TI - TECNOLOGIA INFORMAÇÃO-AUX</li>
+          <li id="departamento"></li>
 
-          <li id="sistema">
+          <li>
             Sistema:
-            <span> Sankhya - Kothe</span>
+            <span id="sistemaOS"></span>
           </li>
 
-          <li id="status">
+          <li>
             Status:
-            <span> Encerrada</span>
+            <span id="statusOS"> Encerrada</span>
           </li>
 
-          <li id="descricao">
+          <li>
             Descrição:
-            <span
-              >Boa tarde. Na tela Contratos de T.I , estou obtendo o erro
-              apresentado na foto em anexo ao tentar alterar o TIPO DE CONTRATO
-              do lançamento nº 1 . Desejo alterar o TIPO DE CONTRATO de
-              "INTERNET" para "PRESTAÇÃO DE SERVIÇOS", e não estou conseguindo
-              devido a esse erro. Obs: O erro acontece tambem em outros
-              lançamentos.</span
-            >
+            <span id="descricaoOS"></span>
           </li>
         </ul>
       </section>
@@ -72,9 +67,7 @@
             onclick="ocultarProcessamentosOS()"
             class="botaoAlternaVisualizacao"
             id="botaoOcultaProcessamentos"
-          >
-            -
-          </button>
+          ></button>
         </div>
         <div id="Processamentos">
           <div id="incluirRetorno">
