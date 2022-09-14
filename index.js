@@ -41,7 +41,6 @@ function incluirRetorno() {
 var mensagens = []
 
 function enviar() {
-  mensagens.push('<li>' + document.getElementById('retorno').value + '</li>')
   var encerraOS = document.getElementById('encerraOS').value
 
   switch (encerraOS) {
@@ -51,15 +50,20 @@ function enviar() {
     case '2':
       var statusOS = 'Aguardando atendimento'
   }
+  mensagens.push(
+    `
+    <ul id="teste">
+      <li id="autor">MYKAELSON.SOUSA</li>
+      <li id="status">${statusOS} - 03/08/2022 17:33:47</li>
+      <li>${document.getElementById('retorno').value}</li>
+    </ul>
+    `
+  )
 
-  respostas = mensagens.join('')
+  var listaProcessamentos = mensagens.join(' ')
 
-  document.getElementById('processamentosExistentes').innerHTML = `
-  <ul>
-    <li id="autor">MYKAELSON.SOUSA</li>
-    <li id="status">${statusOS} - 03/08/2022 17:33:47</li>
-    ${respostas}
-  </ul>
-  `
+  document.getElementById('processamentosExistentes').innerHTML =
+    listaProcessamentos
+
   document.getElementById('retorno').value = ''
 }
