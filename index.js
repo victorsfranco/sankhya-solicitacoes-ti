@@ -11,7 +11,7 @@ function ocultarDetalhesOS() {
   }
 }
 
-var processamentosOS = document.getElementById('respostaProcessamento')
+var processamentosOS = document.getElementById('Processamentos')
 var processamentosVisiveis = true
 
 function ocultarProcessamentosOS() {
@@ -25,7 +25,7 @@ function ocultarProcessamentosOS() {
   }
 }
 
-var retornoOS = document.getElementById('respostaProcessamento')
+var retornoOS = document.getElementById('Processamentos')
 var retornoVisivel = false
 
 function incluirRetorno() {
@@ -38,11 +38,13 @@ function incluirRetorno() {
   }
 }
 
-function enviar() {
-  var mensagem = document.getElementById('resposta').value
-  var encerraValor = document.getElementById('encerra').value
+var mensagens = []
 
-  switch (encerraValor) {
+function enviar() {
+  mensagens.push('<li>' + document.getElementById('retorno').value + '</li>')
+  var encerraOS = document.getElementById('encerraOS').value
+
+  switch (encerraOS) {
     case '1':
       var statusOS = 'Concluída'
       break
@@ -50,15 +52,14 @@ function enviar() {
       var statusOS = 'Aguardando atendimento'
   }
 
+  respostas = mensagens.join('')
+
   document.getElementById('processamentosExistentes').innerHTML = `
   <ul>
     <li id="autor">MYKAELSON.SOUSA</li>
     <li id="status">${statusOS} - 03/08/2022 17:33:47</li>
-    <li>
-      ${mensagem}
-    </li>
+    ${respostas}
   </ul>
   `
-  var textoEscrito = document.getElementById('resposta')
-  textoEscrito.value = ''
+  document.getElementById('retorno').value = ''
 }

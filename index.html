@@ -20,10 +20,13 @@
     </header>
 
     <main>
-      <section class="container" id="informacoesOS">
-        <div class="cabecario" id="cabecarioInformacoesOS">
+      <section class="container" id="detalhesOS">
+        <div class="cabecario" id="cabecarioDetalhesOS">
           <h3>#34367 . Erro ao alterar tipo de Contrato</h3>
-          <button onclick="ocultarDetalhesOS()" class="alternaVisualizacao">
+          <button
+            onclick="ocultarDetalhesOS()"
+            class="botaoAlternaVisualizacao"
+          >
             -
           </button>
         </div>
@@ -58,41 +61,41 @@
       </section>
 
       <section class="container">
-        <div class="cabecario" id="cabecarioProcessamentos">
+        <div class="cabecario" id="cabecarioProcessamentosOS">
           <h3>Atividades Recentes</h3>
 
-          <button id="botaoIncluirRetorno" onclick="incluirRetorno()">
+          <button id="botaoIncluiRetorno" onclick="incluirRetorno()">
             Incluir Retorno
           </button>
 
           <button
             onclick="ocultarProcessamentosOS()"
-            class="alternaVisualizacao"
+            class="botaoAlternaVisualizacao"
             id="botaoOcultaProcessamentos"
           >
             -
           </button>
         </div>
-        <div id="respostaProcessamento">
+        <div id="Processamentos">
           <div id="incluirRetorno">
             <div>
-              <label for="encerrarOS">Encerrar O.S:</label>
-              <select name="encerrarOS" id="encerra">
+              <label for="encerraOS">Encerrar O.S:</label>
+              <select name="encerraOS" id="encerraOS">
                 <option value="1">Sim</option>
                 <option value="2">Não</option>
               </select>
             </div>
             <label for="retorno">Retorno:</label>
-            <textarea name="retorno" id="resposta" cols="30" rows="10">
+            <textarea name="retorno" id="retorno" cols="30" rows="10">
             </textarea>
-            <button onclick="enviar()">Enviar</button>
+            <button id="botaoEnvia" onclick="enviar()">Enviar</button>
           </div>
           <div id="processamentosExistentes"></div>
         </div>
       </section>
     </main>
 
-    <footer id="footer">
+    <footer id="rodape">
       <h3>Kothe</h3>
 
       <p>Depto. Desenvolvimento - &copy; Direitos Reservados</p>

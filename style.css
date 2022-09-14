@@ -46,25 +46,25 @@ main {
   align-items: center;
 }
 
-.alternaVisualizacao {
+.botaoAlternaVisualizacao {
   background-color: #f4f6f9;
   color: #007bff;
   border: none;
   font-size: 2rem;
 }
 
-.alternaVisualizacao:hover {
+.botaoAlternaVisualizacao:hover {
   cursor: pointer;
 }
 
 /* Informações da O.S */
 
-#cabecarioInformacoesOS {
+#cabecarioDetalhesOS {
   display: flex;
   justify-content: space-between;
 }
 
-#informacoesOS h3 {
+#detalhesOS h3 {
 font-family: 'Goldman';
 
 }
@@ -85,7 +85,7 @@ font-family: 'Goldman';
 
 /* Processamentos */
 
-#botaoIncluirRetorno {
+#botaoIncluiRetorno {
   background-color: #007bff;
   color: #fff;
   font-weight: 600;
@@ -95,27 +95,27 @@ font-family: 'Goldman';
 
 }
 
-#respostaProcessamento {
+#Processamentos {
   display: none;
   margin: 1rem;
 }
 
-#botaoIncluirRetorno:hover {
+#botaoIncluiRetorno:hover {
   background-color: #0268d4;
   transition: .2s;
   cursor: pointer;
 }
 
-#cabecarioProcessamentos h3 {
+#cabecarioProcessamentosOS h3 {
   font-family: 'Goldman';
   margin-right: 0.5rem;
   }
 
-#respostaProcessamento ul {
+#Processamentos ul {
   list-style: none;
 }
 
-#respostaProcessamento li {
+#Processamentos li {
   padding: 0.5rem 1rem;
 
 }
@@ -177,7 +177,11 @@ font-family: 'Goldman';
   cursor: pointer;
 }
 
-/* footer */
+#botaoEnvia {
+  margin-bottom: 2rem;
+}
+
+/* Rodapé */
 
 footer {
   margin: 0;
