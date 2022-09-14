@@ -1,3 +1,14 @@
+var dataAtual = new Intl.DateTimeFormat('pt-BR', {
+  day: 'numeric',
+  month: 'numeric',
+  year: 'numeric'
+}).format()
+
+var horaAtual = new Intl.DateTimeFormat('pt-BR', {
+  hour: 'numeric',
+  minute: 'numeric'
+}).format()
+
 var detalhesOS = document.getElementById('listaDetalhesOS')
 var detalhesVisiveis = true
 
@@ -54,7 +65,7 @@ function enviar() {
     `
     <ul id="teste">
       <li id="autor">MYKAELSON.SOUSA</li>
-      <li id="status">${statusOS} - 03/08/2022 17:33:47</li>
+      <li id="status">${statusOS} - ${dataAtual} ${horaAtual}</li>
       <li>${document.getElementById('retorno').value}</li>
     </ul>
     `
