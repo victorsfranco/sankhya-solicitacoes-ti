@@ -99,7 +99,6 @@ font-family: 'Goldman';
 }
 
 #Processamentos {
-  display: none;
   margin: 1rem;
 }
 
@@ -140,7 +139,7 @@ font-family: 'Goldman';
 /* --- Incluir Retorno --- */
 
 #incluirRetorno {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 }

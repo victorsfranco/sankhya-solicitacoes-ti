@@ -1,56 +1,56 @@
 var dataAtual = new Intl.DateTimeFormat('pt-BR', {
-  day: 'numeric',
-  month: 'numeric',
-  year: 'numeric'
+   day: 'numeric',
+   month: 'numeric',
+   year: 'numeric'
 }).format()
 
 var horaAtual = new Intl.DateTimeFormat('pt-BR', {
-  hour: 'numeric',
-  minute: 'numeric'
+   hour: 'numeric',
+   minute: 'numeric'
 }).format()
 
 var detalhesOS = document.getElementById('listaDetalhesOS')
 var detalhesVisiveis = true
 document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
 function ocultarDetalhesOS() {
-  if (detalhesVisiveis == true) {
-    detalhesOS.style.display = 'none'
-    document.getElementById('botaoOcultaDetalhesOS').innerHTML = '+'
-    detalhesVisiveis = false
-  } else if (detalhesVisiveis == false) {
-    detalhesOS.style.display = 'block'
-    document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
-    detalhesVisiveis = true
-  }
+   if (detalhesVisiveis == true) {
+      detalhesOS.style.display = 'none'
+      document.getElementById('botaoOcultaDetalhesOS').innerHTML = '+'
+      detalhesVisiveis = false
+   } else if (detalhesVisiveis == false) {
+      detalhesOS.style.display = 'block'
+      document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
+      detalhesVisiveis = true
+   }
 }
 
 var processamentosOS = document.getElementById('Processamentos')
-var processamentosVisiveis = false
+var processamentosVisiveis = true
 document.getElementById('botaoOcultaProcessamentos').innerHTML = '-'
 
 function ocultarProcessamentosOS() {
-  if (processamentosVisiveis == true) {
-    processamentosOS.style.display = 'none'
-    document.getElementById('botaoOcultaProcessamentos').innerHTML = '+'
-    processamentosVisiveis = false
-  } else if (processamentosVisiveis == false) {
-    processamentosOS.style.display = 'block'
-    document.getElementById('botaoOcultaProcessamentos').innerHTML = '-'
-    processamentosVisiveis = true
-  }
+   if (processamentosVisiveis == true) {
+      processamentosOS.style.display = 'none'
+      document.getElementById('botaoOcultaProcessamentos').innerHTML = '+'
+      processamentosVisiveis = false
+   } else if (processamentosVisiveis == false) {
+      processamentosOS.style.display = 'block'
+      document.getElementById('botaoOcultaProcessamentos').innerHTML = '-'
+      processamentosVisiveis = true
+   }
 }
 
-var retornoOS = document.getElementById('Processamentos')
+var retornoOS = document.getElementById('incluirRetorno')
 var retornoVisivel = false
 
 function incluirRetorno() {
-  if (retornoVisivel == true) {
-    retornoOS.style.display = 'none'
-    retornoVisivel = false
-  } else if (retornoVisivel == false) {
-    retornoOS.style.display = 'block'
-    retornoVisivel = true
-  }
+   if (retornoVisivel == true) {
+      retornoOS.style.display = 'none'
+      retornoVisivel = false
+   } else if (retornoVisivel == false) {
+      retornoOS.style.display = 'flex'
+      retornoVisivel = true
+   }
 }
 
 //Importação de campos - SANKHYA
@@ -59,14 +59,14 @@ document.getElementById('numeroUnicoOS').innerHTML = '#34367'
 
 // Título da OS:
 document.getElementById('tituloOS').innerHTML =
-  'Erro ao alterar tipo de Contrato'
+   'Erro ao alterar tipo de Contrato'
 
 // Solicitante:
 document.getElementById('solicitante').innerHTML = 'VICTOR ANTONIO SILVA FRANCO'
 
 //Departamento:
 document.getElementById('departamento').innerHTML =
-  'TI - TECNOLOGIA INFORMAÇÃO-AUX'
+   'TI - TECNOLOGIA INFORMAÇÃO-AUX'
 
 //Sistema:
 document.getElementById('sistemaOS').innerHTML = 'Sankhya - Kothe'
@@ -76,7 +76,7 @@ document.getElementById('statusOS').innerHTML = 'Encerrada'
 
 //Descrição da O.S:
 document.getElementById(
-  'descricaoOS'
+   'descricaoOS'
 ).innerHTML = `Boa tarde. Na tela Contratos de T.I , estou obtendo o erro
 apresentado na foto em anexo ao tentar alterar o TIPO DE CONTRATO
 do lançamento nº 1 . Desejo alterar o TIPO DE CONTRATO de
@@ -89,29 +89,29 @@ lançamentos.`
 var mensagens = []
 
 function enviar() {
-  var encerraOS = document.getElementById('encerraOS').value
+   var encerraOS = document.getElementById('encerraOS').value
 
-  switch (encerraOS) {
-    case '1':
-      var statusOS = 'Concluída'
-      break
-    case '2':
-      var statusOS = 'Aguardando atendimento'
-  }
-  mensagens.push(
-    `
+   switch (encerraOS) {
+      case '1':
+         var statusOS = 'Concluída'
+         break
+      case '2':
+         var statusOS = 'Aguardando atendimento'
+   }
+   mensagens.push(
+      `
     <ul id="teste">
       <li id="autor"></li>
       <li id="status">${statusOS} - ${dataAtual} ${horaAtual}</li>
       <li>${document.getElementById('retorno').value}</li>
     </ul>
     `
-  )
+   )
 
-  var listaProcessamentos = mensagens.join('')
+   var listaProcessamentos = mensagens.join('')
 
-  document.getElementById('processamentosExistentes').innerHTML =
-    listaProcessamentos
+   document.getElementById('processamentosExistentes').innerHTML =
+      listaProcessamentos
 
-  document.getElementById('retorno').value = ''
+   document.getElementById('retorno').value = ''
 }
