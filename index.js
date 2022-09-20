@@ -100,7 +100,7 @@ function enviar() {
    }
    mensagens.push(
       `
-    <ul id="teste">
+    <ul id="processamentoIncluido">
       <li id="autor"></li>
       <li id="status">${statusOS} - ${dataAtual} ${horaAtual}</li>
       <li>${document.getElementById('retorno').value}</li>

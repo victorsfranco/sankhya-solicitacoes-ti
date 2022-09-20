@@ -1,99 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solicitações T.I</title>
-  </head>
+   <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Solicitações T.I</title>
+   </head>
 
-  <body>
-    <header>
-      <h1>Solicitações T.I</h1>
-    </header>
-
-    <main>
-      <section class="container" id="detalhesOS">
-        <div class="cabecario" id="cabecarioDetalhesOS">
-          <h3>
-            <span id="numeroUnicoOS"></span> -
-            <span id="tituloOS"></span>
-          </h3>
-          <button
-            onclick="ocultarDetalhesOS()"
-            class="botaoAlternaVisualizacao"
-            id="botaoOcultaDetalhesOS"
-          ></button>
-        </div>
-
-        <ul id="listaDetalhesOS">
-          <li id="solicitante"></li>
-
-          <li id="departamento"></li>
-
-          <li>
-            Sistema:
-            <span id="sistemaOS"></span>
-          </li>
-
-          <li>
-            Status:
-            <span id="statusOS"> Encerrada</span>
-          </li>
-
-          <li>
-            Descrição:
-            <span id="descricaoOS"></span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="container">
-        <div class="cabecario" id="cabecarioProcessamentosOS">
-          <h3>Atividades Recentes</h3>
-
-          <button id="botaoIncluiRetorno" onclick="incluirRetorno()">
-            Incluir Retorno
-          </button>
-
-          <button
-            onclick="ocultarProcessamentosOS()"
-            class="botaoAlternaVisualizacao"
-            id="botaoOcultaProcessamentos"
-          ></button>
-        </div>
-        <div id="Processamentos">
-          <div id="incluirRetorno">
-            <div>
-              <label for="encerraOS">Encerrar O.S:</label>
-              <select name="encerraOS" id="encerraOS">
-                <option value="1">Sim</option>
-                <option value="2">Não</option>
-              </select>
+   <body>
+      <main>
+         <header>
+            <h1>Solicitações T.I</h1>
+         </header>
+         <section class="container" id="detalhesOS">
+            <div class="cabecario" id="cabecarioDetalhesOS">
+               <h3>
+                  <span id="numeroUnicoOS"></span> -
+                  <span id="tituloOS"></span>
+               </h3>
+               <button
+                  onclick="ocultarDetalhesOS()"
+                  class="botaoAlternaVisualizacao"
+                  id="botaoOcultaDetalhesOS"
+               ></button>
             </div>
-            <label for="retorno">Retorno:</label>
-            <textarea name="retorno" id="retorno" cols="30" rows="10">
-            </textarea>
-            <button id="botaoEnvia" onclick="enviar()">Enviar</button>
-          </div>
-          <div id="processamentosExistentes"></div>
-        </div>
-      </section>
-    </main>
 
-    <footer id="rodape">
-      <h3>Kothe</h3>
+            <ul id="listaDetalhesOS">
+               <li id="solicitante"></li>
 
-      <p>Depto. Desenvolvimento - &copy; Direitos Reservados</p>
-    </footer>
+               <li id="departamento"></li>
 
-    <script src="index.js"></script>
-  </body>
+               <li>
+                  Sistema:
+                  <span id="sistemaOS"></span>
+               </li>
+
+               <li>
+                  Status:
+                  <span id="statusOS"> Encerrada</span>
+               </li>
+
+               <li>
+                  Descrição:
+                  <span id="descricaoOS"></span>
+               </li>
+            </ul>
+         </section>
+
+         <section class="container">
+            <div class="cabecario" id="cabecarioProcessamentosOS">
+               <h3>Atividades Recentes</h3>
+
+               <button id="botaoIncluiRetorno" onclick="incluirRetorno()">
+                  Incluir Retorno
+               </button>
+
+               <button
+                  onclick="ocultarProcessamentosOS()"
+                  class="botaoAlternaVisualizacao"
+                  id="botaoOcultaProcessamentos"
+               ></button>
+            </div>
+            <div id="Processamentos">
+               <div id="incluirRetorno">
+                  <div id="selecaoEncerramento">
+                     <label for="encerraOS">Encerrar O.S:</label>
+                     <select name="encerraOS" id="encerraOS">
+                        <option value="1">Sim</option>
+                        <option value="2">Não</option>
+                     </select>
+                  </div>
+                  <label for="retorno" id="labelRetorno">Retorno:</label>
+                  <textarea name="retorno" id="retorno" cols="30" rows="10">
+                  </textarea>
+                  <button id="botaoEnvia" onclick="enviar()">Enviar</button>
+               </div>
+               <div id="processamentosExistentes"></div>
+            </div>
+         </section>
+         <footer id="rodape">
+            <h3>Kothe</h3>
+            <p>Depto. Desenvolvimento - &copy; Direitos Reservados</p>
+         </footer>
+      </main>
+
+      <script src="index.js"></script>
+   </body>
 </html>
