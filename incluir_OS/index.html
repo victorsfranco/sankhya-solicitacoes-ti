@@ -15,34 +15,47 @@
 </head>
 <body>
    <main>
-      <header>
+      <header id="cabecario">
          <h1>Solicitações T.I</h1>
       </header>
-      <div id="formulario">
-         <ul id="informacoesOS">
+      <section id="formulario">
+
+         <ul id="informacoes">
             <li>
                <label for="tituloOS">Título:</label>
-               <input type="text" name="tituloOS">
+               <input class="preenchimentoDeInformacoes" type= "text" name="tituloOS" id="tituloOS">
             </li>
+
             <li>
                <label for="solicitanteOS">Solicitante:</label>
-               <input type="text" name="solicitanteOS">
+               <input class="preenchimentoDeInformacoes" type="text" name="solicitanteOS" id="solicitanteOS">
             </li>
+            
             <li>
                <label for="sistemaOS">Sistema:</label>
-               <input type="text" name="sistemaOS">
+               <input class="preenchimentoDeInformacoes" type="text" name="sistemaOS" id="sistemaOS">
             </li>
+
             <li>
-               <label for="descricaoOS">Descrição:</label>
-               <textarea name="descricaoOS" id="" cols="30" rows="10"></textarea>
+               <label for="telaOcorrencia">Em que tela Ocorre:</label>
+               <input class="preenchimentoDeInformacoes" name="telaOcorrencia" type="text">
             </li>
+
+            
          </ul>
-      </div>
-      <footer>
-         <h3>Kothe</h3>
-         <p>Depto. Desenvolvimento - &copy; Direitos Resevados</p>
-      </footer>
+         <div id="descricaoOS">
+            <label for="descricaoOS">Descrição:</label>
+            <textarea class="preenchimentoDeInformacoes" name="descricaoOS" cols="30" rows="10"></textarea>
+         </div>
+
+         
+      </section>
+
    </main>
+   <footer>
+      <h3>Kothe</h3>
+      <p>Depto. Desenvolvimento - &copy; Direitos Resevados</p>
+   </footer>
    
 </body>
 </html>
