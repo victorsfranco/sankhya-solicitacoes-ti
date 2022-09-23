@@ -30,7 +30,6 @@ main {
 /* --- Formulário --- */
 
 #formulario {
-   background-color: #ffffff;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -43,12 +42,20 @@ main {
 
 #informacoes {
    list-style: none;
-   margin: 1.5rem 1rem;
+   padding: 1.5rem 1.5rem 1rem 1.5rem;
+   width: 100%;
    display: flex;
+   justify-content: space-between;
 }
 
-label {
+#informacoes input {
+   height: 2.5rem;
+   width: 100%;
+}
+
+.label {
    font-size: 0.875rem;
+   margin: 0.25rem;
 }
 
 .preenchimentoDeInformacoes {
@@ -56,29 +63,53 @@ label {
    border: 0.5px solid #dedede;
    border-radius: 0.2rem;
    outline: none;  
+   font-size: 1rem;
 }
 
-li {
+.item {
    display: flex;
    flex-direction: column;
+   width: 100%;
+   margin: 0 5px;
 }
 
 #descricaoOS {
-   margin: 0 1.5rem;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
 }
 
+#descricaoOS label {
+   margin-left: 1.5rem;
+}
 textarea {
+   margin: 0.25rem 1.5rem;
    resize: none;
+}
+
+#botoes {
+   margin: 1rem 1.5rem;
+}
+
+#botoes button {
+   /* padding: 10px 1rem; */
+   width: 9.3rem;
+   height: 2.5rem;
+   margin-right: 1rem;
+}
+
+button:hover {
+   cursor: pointer;
 }
 
 /* --- Footer --- */
 
 footer {
-   width: 100vw;
+   width: 100%;
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 2rem;
+   padding: 1rem;
 }
 
 footer h3 {
