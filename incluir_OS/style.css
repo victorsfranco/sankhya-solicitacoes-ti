@@ -36,7 +36,7 @@ main {
    border: solid 0.5px;
    border-color: rgb(214, 214, 214);
    border-radius: 0.5rem;
-   box-shadow: 1px 1px 4px #ddd;
+   box-shadow: 1px 1px 4px #ffffff;
    
 }
 
@@ -87,19 +87,40 @@ textarea {
    resize: none;
 }
 
+/* --- Botões --- */
+
 #botoes {
    margin: 1rem 1.5rem;
 }
 
 #botoes button {
-   /* padding: 10px 1rem; */
    width: 9.3rem;
    height: 2.5rem;
    margin-right: 1rem;
 }
 
-button:hover {
+#botaoSalvar {
    cursor: pointer;
+   color: #ffffff;
+   background-color: #007bff;
+   border: none;
+}
+
+#botaoSalvar:hover {
+   background-color: #0268d4;
+   transition: 0.2s;
+}
+
+#botaoCancelar {
+   cursor: pointer;
+   color: #FF4646;
+   background-color: #ffffff;
+   border: none;
+}
+
+#botaoCancelar:hover {
+   background-color: #e2e2e2;
+   transition: 0.2s;
 }
 
 /* --- Footer --- */
