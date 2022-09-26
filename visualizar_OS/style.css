@@ -36,7 +36,7 @@ main {
    border: solid 0.5px;
    border-color: rgb(214, 214, 214);
    border-radius: 0.5rem;
-   box-shadow: 1px 1px 4px #ddd;
+   /* box-shadow: 1px 1px 4px #ddd; */
 }
 
 .cabecario {
@@ -153,13 +153,18 @@ main {
    background-color: #f4f6f9;
    width: 15rem;
    margin: 2rem 1rem;
+   padding: 0.5rem;
    border: 0.5px solid #dedede;
    border-radius: 0.2rem;
    outline: none;
 }
 
+#encerraOS:hover {
+   cursor: pointer;
+}
+
 #selecaoEncerramento {
-   margin: 0.5rem 1rem;
+   margin: 0 1rem;
 }
 
 #labelRetorno {
