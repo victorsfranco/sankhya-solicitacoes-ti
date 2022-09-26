@@ -1,18 +1,20 @@
-var dataAtual = new Intl.DateTimeFormat('pt-BR', {
+// Definição do Usuário de inclusão do processamento da O.S
+const autor = 'MYKALESON.SOUSA'
+
+const dataAtual = new Intl.DateTimeFormat('pt-BR', {
    day: 'numeric',
    month: 'numeric',
    year: 'numeric'
 }).format()
 
-var horaAtual = new Intl.DateTimeFormat('pt-BR', {
+const horaAtual = new Intl.DateTimeFormat('pt-BR', {
    hour: 'numeric',
    minute: 'numeric'
 }).format()
 
 
-
-var detalhesOS = document.getElementById('listaDetalhesOS')
-var detalhesVisiveis = true
+const detalhesOS = document.getElementById('listaDetalhesOS')
+let detalhesVisiveis = true
 document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
 function ocultarDetalhesOS() {
    if (detalhesVisiveis == true) {
@@ -26,8 +28,8 @@ function ocultarDetalhesOS() {
    }
 }
 
-var processamentosOS = document.getElementById('Processamentos')
-var processamentosVisiveis = true
+const processamentosOS = document.getElementById('Processamentos')
+let processamentosVisiveis = true
 document.getElementById('botaoOcultaProcessamentos').innerHTML = '-'
 
 function ocultarProcessamentosOS() {
@@ -42,11 +44,11 @@ function ocultarProcessamentosOS() {
    }
 }
 
-var textArea = document.querySelector('#retorno');
+const textArea = document.querySelector('#retorno');
 textArea.value = '';
 
-var retornoOS = document.getElementById('incluirRetorno')
-var retornoVisivel = false
+const retornoOS = document.getElementById('incluirRetorno')
+let retornoVisivel = false
 
 function incluirRetorno() {
    if (retornoVisivel == true) {
@@ -91,14 +93,14 @@ lançamentos.`
 
 //Inclusão do Processamento da O.S:
 
-var mensagens = []
+const mensagens = []
 
 function enviar() {
-   var encerraOS = document.getElementById('encerraOS').value
+   const encerraOS = document.getElementById('encerraOS').value
 
    switch (encerraOS) {
       case '1':
-         var statusOS = 'Concluída'
+         var statusOS = 'Encerrada'
          break
       case '2':
          var statusOS = 'Aguardando atendimento'
@@ -106,14 +108,14 @@ function enviar() {
    mensagens.push(
       `
     <ul id="processamentoIncluido">
-      <li id="autor"></li>
+      <li id="autor">${autor}</li>
       <li id="status">${statusOS} - ${dataAtual} ${horaAtual}</li>
       <li>${document.getElementById('retorno').value}</li>
     </ul>
     `
    )
 
-   var listaProcessamentos = mensagens.join('')
+   const listaProcessamentos = mensagens.join('')
 
    document.getElementById('processamentosExistentes').innerHTML =
       listaProcessamentos
