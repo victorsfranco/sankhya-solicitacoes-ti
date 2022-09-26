@@ -94,16 +94,17 @@ lançamentos.`
 //Inclusão do Processamento da O.S:
 
 const mensagens = []
+let statusOS;
 
 function enviar() {
    const encerraOS = document.getElementById('encerraOS').value
 
    switch (encerraOS) {
-      case '1':
-         var statusOS = 'Encerrada'
+      case 'sim':
+         statusOS = 'Encerrada'
          break
-      case '2':
-         var statusOS = 'Aguardando atendimento'
+      case 'nao':
+         statusOS = 'Aguardando atendimento'
    }
    mensagens.push(
       `
