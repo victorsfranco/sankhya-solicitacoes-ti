@@ -9,6 +9,8 @@ var horaAtual = new Intl.DateTimeFormat('pt-BR', {
    minute: 'numeric'
 }).format()
 
+
+
 var detalhesOS = document.getElementById('listaDetalhesOS')
 var detalhesVisiveis = true
 document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
@@ -39,6 +41,9 @@ function ocultarProcessamentosOS() {
       processamentosVisiveis = true
    }
 }
+
+var textArea = document.querySelector('#retorno');
+textArea.value = '';
 
 var retornoOS = document.getElementById('incluirRetorno')
 var retornoVisivel = false
