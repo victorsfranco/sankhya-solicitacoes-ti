@@ -74,13 +74,13 @@ body {
    margin: 0 5px;
 }
 
-#descricaoOS {
+#detalhesOS {
    display: flex;
    flex-direction: column;
    width: 100%;
 }
 
-#descricaoOS label {
+#detalhesOS label {
    margin-left: 1.5rem;
 }
 textarea {
