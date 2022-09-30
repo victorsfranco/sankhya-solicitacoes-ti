@@ -12,7 +12,7 @@ body {
    background-color: #f4f6f9;
    max-width: 1490px;
    margin: 0 auto;
-   padding:0 3rem;
+   padding: 0 3rem;
 }
 
 /* --- Header --- */
@@ -36,7 +36,7 @@ body {
    border-color: rgb(214, 214, 214);
    border-radius: 0.5rem;
    box-shadow: 1px 1px 4px #ffffff;
-   
+
 }
 
 #informacoes {
@@ -63,7 +63,7 @@ body {
    border: none;
    border: 0.5px solid #dedede;
    border-radius: 0.2rem;
-   outline: none;  
+   outline: none;
    font-size: 1rem;
 }
 
@@ -83,11 +83,13 @@ body {
 #detalhesOS label {
    margin-left: 1.5rem;
 }
+
 textarea {
    padding: 1rem;
    background-color: #f4f6f9;
    margin: 0.25rem 1.5rem;
    resize: none;
+   font-family: 'Roboto', sans-serif;
    /* box-sizing: border-box; */
 }
 
