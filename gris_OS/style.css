@@ -38,3 +38,25 @@ table {
 .table--data:hover {
 	background-color: #f1f0f5;
 }
+
+.status {
+	padding: 0.25rem 0.7rem;
+	border-radius: 1rem;
+	font-weight: 500;
+
+}
+
+.status--waitingAttendance {
+	background-color: #fceded;
+	color: #b11b1b;
+}
+
+.status--inAttendance {
+	background-color: #fef8ec;
+	color: #916208;
+}
+
+.status--completed {
+	background-color: #ebfdfd;
+	color: #089171;
+}
