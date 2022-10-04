@@ -13,52 +13,56 @@
 
 	<header>
 
-		<label for="numero_unico">Número Único:</label>
-		<input type="text" id="numero_unico">
-
-		<label for="data_inclusao">Data de Inclusão:</label>
-		<input type="date" id="data_inclusao">
-		<span>a</span>
-		<input type="date">
-
-		<label for="solicitante">Solicitante:</label>
-		<input type="text" id="solicitante">
-
-		<label for="titulo_descricao">Título/Descrição:</label>
-		<input type="text" id="titulo_descricao">
-
-		<div id="status">
-
-			<input type="checkbox" checked name="" id="todos">
-			<label for="todos">Todos</label>
-
-			<input type="checkbox" checked name="" id="aberta">
-			<label for="aberta">Aberta</label>
-
-			<input type="checkbox" checked name="" id="atribuida">
-			<label for="atribuida">Atribuída</label>
-
-			<input type="checkbox" checked name="" id="aguardando_atendimento">
-			<label for="aguardando_atendimento">Aguardando Atendimento</label>
-
-			<input type="checkbox" checked name="" id="em_atendimento">
-			<label for="em_atendimento">Em Atendimento</label>
-
-			<input type="checkbox" checked name="aberta" id="aguardando_retorno_solicitante">
-			<label for="aguardando_retorno_solicitante">Aguardando Retorno do Solicitante</label>
-
-			<input type="checkbox" checked name="" id="concluida">
-			<label for="concluida">Concluída</label>
-
-			<input type="checkbox" checked name="aberta" id="encerrada">
-			<label for="encerrada">Encerrada</label>
-
-			<input type="checkbox" checked name="aberta" id="cancelada">
-			<label for="cancelada">Cancelada</label>
-
-		</div>
+		<form action="">
 
 
+			<label for="numero_unico">Número Único:</label>
+			<input type="text" name="numero_unico" id="numero_unico">
+
+			<label for="data_inclusao">Data de Inclusão:</label>
+			<input type="date" name="data_inclusao_inicio" id="data_inclusao_inicio">
+			<span>a</span>
+			<input type="date" name="data_inclusao_fim" id="data_inclusao_fim">
+
+			<label for="solicitante">Solicitante:</label>
+			<input type="text" name="solicitante" id="solicitante">
+
+			<label for="titulo_descricao">Título/Descrição:</label>
+			<input type="text" name="titulo_descricao" id="titulo_descricao">
+
+			<div id="status">
+
+				<input type="checkbox" checked name="todos" id="todos">
+				<label for="todos">Todos</label>
+
+				<input type="checkbox" checked name="aberta" id="aberta">
+				<label for="aberta">Aberta</label>
+
+				<input type="checkbox" checked name="atribuida" id="atribuida">
+				<label for="atribuida">Atribuída</label>
+
+				<input type="checkbox" checked name="aguardando_atendimento" id="aguardando_atendimento">
+				<label for="aguardando_atendimento">Aguardando Atendimento</label>
+
+				<input type="checkbox" checked name="em_atendimento" id="em_atendimento">
+				<label for="em_atendimento">Em Atendimento</label>
+
+				<input type="checkbox" checked name="aguardando_retorno_solicitante" id="aguardando_retorno_solicitante">
+				<label for="aguardando_retorno_solicitante">Aguardando Retorno do Solicitante</label>
+
+				<input type="checkbox" checked name="concluida" id="concluida">
+				<label for="concluida">Concluída</label>
+
+				<input type="checkbox" checked name="encerrada" id="encerrada">
+				<label for="encerrada">Encerrada</label>
+
+				<input type="checkbox" checked name="cancelada" id="cancelada">
+				<label for="cancelada">Cancelada</label>
+
+			</div>
+
+			<button type="submit">Aplicar</button>
+		</form>
 	</header>
 
 	<main>
