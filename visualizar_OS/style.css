@@ -83,6 +83,13 @@ main {
    padding: 0.5rem 1rem;
 }
 
+
+/* --- Anexos --- */
+
+#conteudoAnexos * {
+   background-color: #ffffff;
+}
+
 /* --- Processamentos --- */
 
 #botaoIncluiRetorno {
