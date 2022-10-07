@@ -1,17 +1,10 @@
 // Definição do Usuário de inclusão do processamento da O.S
 const autor = 'MYKALESON.SOUSA'
 
-const dataAtual = new Intl.DateTimeFormat('pt-BR', {
-   day: 'numeric',
-   month: 'numeric',
-   year: 'numeric'
-}).format()
+// Coleta de Data e Hora Atuais
+const dataLocal = new Date().toLocaleDateString("pt-BR");
 
-const horaAtual = new Intl.DateTimeFormat('pt-BR', {
-   hour: 'numeric',
-   minute: 'numeric'
-}).format()
-
+const horaLocal = new Date().toLocaleTimeString("pt-BR", {hour: '2-digit', minute: '2-digit'});
 
 const detalhesOS = document.getElementById('listaDetalhesOS')
 let detalhesVisiveis = true
@@ -110,7 +103,7 @@ function enviar() {
       `
     <ul id="processamentoIncluido">
       <li id="autor">${autor}</li>
-      <li id="status">${statusOS} - ${dataAtual} ${horaAtual}</li>
+      <li id="status">${statusOS} - ${dataLocal} ${horaLocal}</li>
       <li>${document.getElementById('retorno').value}</li>
     </ul>
     `
