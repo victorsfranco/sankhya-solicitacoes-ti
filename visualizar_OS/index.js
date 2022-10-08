@@ -6,6 +6,8 @@ const dataLocal = new Date().toLocaleDateString("pt-BR");
 
 const horaLocal = new Date().toLocaleTimeString("pt-BR", {hour: '2-digit', minute: '2-digit'});
 
+
+//Função Oculta Detalhes da O.S
 const detalhesOS = document.getElementById('listaDetalhesOS')
 let detalhesVisiveis = true
 document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
@@ -21,8 +23,9 @@ function ocultarDetalhesOS() {
    }
 }
 
+//Função Oculta Processamentos da O.S
 const processamentosOS = document.getElementById('Processamentos')
-let processamentosVisiveis = true
+let processamentosVisiveis = true;
 document.getElementById('botaoOcultaProcessamentos').innerHTML = '-'
 
 function ocultarProcessamentosOS() {
@@ -36,6 +39,32 @@ function ocultarProcessamentosOS() {
       processamentosVisiveis = true
    }
 }
+
+//Função Oculta Anexos da O.S
+const anexosOS = document.querySelector('#conteudoAnexos');
+let anexosVisiveis = true;
+document.querySelector("#botaoOcultaAnexos").innerHTML = '-';
+
+function ocultaAnexosOS() {
+   if (anexosVisiveis === true) {
+      anexosOS.style.display = 'none';
+      document.querySelector('#botaoOcultaAnexos').innerHTML = '+';
+      anexosVisiveis = false;
+   } else if (anexosVisiveis === false) {
+      anexosOS.style.display = 'block';
+      document.querySelector('#botaoOcultaAnexos').innerHTML = '-';
+      anexosVisiveis = true;
+   }
+}
+
+// Array que Receberá os anexos
+const listaAnexos = [];
+
+if (listaAnexos.length <= 0) {
+   document.querySelector('#anexos').style.display = 'none';
+} else {document.querySelector('#anexos').style.display = 'block';
+};
+
 
 const textArea = document.querySelector('#retorno');
 textArea.value = '';
