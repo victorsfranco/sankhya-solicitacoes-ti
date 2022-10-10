@@ -59,6 +59,22 @@ function ocultaAnexosOS() {
 
 // Array que Receberá os anexos
 const listaAnexos = [];
+const autorAnexo = 'VICTOR.FRANCO';
+
+
+const itemAnexo = 'anexo1';
+
+
+listaAnexos.push(
+`
+<a href="#">${itemAnexo}</a> - ${autorAnexo} | ${dataLocal} ${horaLocal}
+`)
+
+document.querySelector('#conteudoAnexos').innerHTML = listaAnexos;
+
+
+
+
 
 if (listaAnexos.length <= 0) {
    document.querySelector('#anexos').style.display = 'none';
