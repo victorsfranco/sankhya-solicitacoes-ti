@@ -73,6 +73,11 @@ main {
 
 #listaDetalhesOS * {
 	background-color: #ffffff;
+}
+
+#listaDetalhesOS {
+	background-color: #ffffff;
+	padding: 1rem;
 	list-style-type: none;
 }
 
@@ -81,15 +86,31 @@ main {
 	font-weight: 700;
 }
 
-#listaDetalhesOS li {
-	padding: 0.5rem 1rem;
+.detalheItem {
+	padding-bottom: 0.5rem;
 }
 
+#detalhesUltimoFilho {
+	padding-bottom: 0;
+}
 
 /* --- Anexos --- */
 
 #conteudoAnexos * {
 	background-color: #ffffff;
+}
+
+#listaAnexos {
+	list-style: none;
+	padding: 1rem;
+}
+
+.anexoItem {
+	padding-bottom: 0.5rem;
+}
+
+.anexoItem:last-child {
+	padding-bottom: 0;
 }
 
 /* --- Processamentos --- */

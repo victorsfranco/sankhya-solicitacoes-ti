@@ -58,23 +58,12 @@ function ocultaAnexosOS() {
 }
 
 // Array que Receberá os anexos
-const listaAnexos = [];
+const listaAnexos = ['anexo 1', 'asdmasodmasd', 'ssa', 3];
 const autorAnexo = 'VICTOR.FRANCO';
 
-
-const itemAnexo = 'anexo1';
-
-
-listaAnexos.push(
-`
-<a href="#">${itemAnexo}</a> - ${autorAnexo} | ${dataLocal} ${horaLocal}
-`)
-
-document.querySelector('#conteudoAnexos').innerHTML = listaAnexos;
-
-
-
-
+document.querySelector('#conteudoAnexos').innerHTML = `<ul id="listaAnexos"> ${listaAnexos.map((i) => {
+   return ` <li class= "anexoItem"> <a href= "#"> ${i} </a> ${autorAnexo} | ${dataLocal} ${horaLocal} </li>`
+}).join('')} </ul>`
 
 if (listaAnexos.length <= 0) {
    document.querySelector('#anexos').style.display = 'none';
