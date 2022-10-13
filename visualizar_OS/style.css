@@ -38,7 +38,7 @@ main {
 	box-shadow: 1px 1px 4px #ddd;
 }
 
-.cabecario {
+.container-header {
 	background-color: #f4f6f9;
 	display: flex;
 	padding: 1rem;
@@ -47,7 +47,7 @@ main {
 	align-items: center;
 }
 
-.botaoAlternaVisualizacao {
+.toggle-view-button {
 	background-color: #f4f6f9;
 	color: #007bff;
 	border: none;
@@ -56,37 +56,37 @@ main {
 	right: 9rem;
 }
 
-.botaoAlternaVisualizacao:hover {
+.toggle-view-button:hover {
 	cursor: pointer;
 }
 
 /* --- Informações da O.S --- */
 
-#cabecarioDetalhesOS {
+#so-details-header {
 	display: flex;
 	justify-content: space-between;
 }
 
-#detalhesOS h3 {
+#soDetails h3 {
 	font-family: 'Inter';
 }
 
-#listaDetalhesOS * {
+#so-details-list * {
 	background-color: #ffffff;
 }
 
-#listaDetalhesOS {
+#so-details-list {
 	background-color: #ffffff;
 	padding: 1rem;
 	list-style-type: none;
 }
 
-#solicitante {
+#requester {
 	color: #007bff;
 	font-weight: 700;
 }
 
-.detalheItem {
+.detail-item {
 	padding-bottom: 0.5rem;
 }
 
@@ -96,11 +96,11 @@ main {
 
 /* --- Anexos --- */
 
-#conteudoAnexos * {
+#attachments-content * {
 	background-color: #ffffff;
 }
 
-#listaAnexos {
+#attachments-list {
 	list-style: none;
 	padding: 1rem;
 }
@@ -115,7 +115,7 @@ main {
 
 /* --- Processamentos --- */
 
-#botaoIncluiRetorno {
+#include-return-button {
 	font-family: 'Inter';
 	font-size: 0.875rem;
 	background-color: #007bff;
@@ -126,13 +126,13 @@ main {
 	border-radius: 0.2rem;
 }
 
-#botaoIncluiRetorno:hover {
+#include-return-button:hover {
 	background-color: #0268d4;
 	transition: 0.2s;
 	cursor: pointer;
 }
 
-#Processamentos * {
+#processing * {
 	background-color: #ffffff;
 	margin: 0rem;
 }
@@ -142,11 +142,11 @@ main {
 	margin-right: 0.5rem;
 }
 
-#Processamentos ul {
+#processing ul {
 	list-style: none;
 }
 
-#Processamentos li {
+#processing li {
 	padding: 0.5rem 1rem;
 }
 
@@ -162,13 +162,13 @@ main {
 	margin-bottom: 1.5rem;
 }
 
-#processamentosExistentes {
+#existing-processing {
 	background-color: #ffffff;
 }
 
 /* --- Incluir Retorno --- */
 
-#incluirRetorno {
+#include-return {
 	font-family: 'Inter';
 	background-color: #ffffff;
 	margin: 0;
@@ -177,7 +177,7 @@ main {
 	justify-content: center;
 }
 
-#incluirRetorno select {
+#include-return select {
 	font-family: 'Inter';
 	background-color: #f4f6f9;
 	width: 15rem;
@@ -188,20 +188,20 @@ main {
 	outline: none;
 }
 
-#encerraOS:hover {
+#finish-so:hover {
 	cursor: pointer;
 }
 
-#selecaoEncerramento {
+#conclusion-type-selection {
 	margin: 0 1rem;
 }
 
-#labelRetorno {
+#return-label {
 	font-family: 'Inter';
 	margin: 0 0 1rem 1rem;
 }
 
-#incluirRetorno textarea {
+#include-return textarea {
 	margin: 0.5rem 1rem;
 	padding: 1rem;
 	background-color: #f4f6f9;
@@ -216,7 +216,7 @@ main {
 	resize: none;
 }
 
-#incluirRetorno button {
+#include-return button {
 	color: #fff;
 	background-color: #007bff;
 	padding: 0.5rem;
@@ -225,13 +225,13 @@ main {
 	border-radius: 0.2rem;
 }
 
-#incluirRetorno button:hover {
+#include-return button:hover {
 	background-color: #0268d4;
 	transition: 0.2s;
 	cursor: pointer;
 }
 
-#botaoEnvia {
+#send-button {
 	font-family: 'Inter';
 	margin: 2rem 1rem;
 }

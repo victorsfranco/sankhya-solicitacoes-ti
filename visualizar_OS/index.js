@@ -8,17 +8,17 @@ const horaLocal = new Date().toLocaleTimeString("pt-BR", {hour: '2-digit', minut
 
 
 //Função Oculta Detalhes da O.S
-const detalhesOS = document.getElementById('listaDetalhesOS')
+const soDetails = document.getElementById('listasoDetails')
 let detalhesVisiveis = true
-document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
-function ocultarDetalhesOS() {
+document.getElementById('botaoOcultasoDetails').innerHTML = '-'
+function ocultarsoDetails() {
    if (detalhesVisiveis == true) {
-      detalhesOS.style.display = 'none'
-      document.getElementById('botaoOcultaDetalhesOS').innerHTML = '+'
+      soDetails.style.display = 'none'
+      document.getElementById('botaoOcultasoDetails').innerHTML = '+'
       detalhesVisiveis = false
    } else if (detalhesVisiveis == false) {
-      detalhesOS.style.display = 'block'
-      document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
+      soDetails.style.display = 'block'
+      document.getElementById('botaoOcultasoDetails').innerHTML = '-'
       detalhesVisiveis = true
    }
 }
