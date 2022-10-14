@@ -58,7 +58,7 @@ function hideRequestAttachments() {
 }
 
 // Array que Receberá os anexos
-const attachmentsList = ['anexo 1', 'asdmasodmasd', 'ssa', 3];
+const attachmentsList = ['Anexo 1', 'Foto2.pdf', 'img3.ong'];
 const attachmentAuthor = 'VICTOR.FRANCO';
 
 document.querySelector('#attachments-content').innerHTML = `<ul id="attachments-list"> ${attachmentsList.map((i) => {
