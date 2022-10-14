@@ -1,12 +1,12 @@
-const tituloOS = document.querySelector('#tituloOS').value;
+const requestTitle = document.querySelector('#request-title').value;
 
-const sistemaOS = document.querySelector('#sistemaOS').value;
+const requestSystem = document.querySelector('#request-system').value;
 
-const telaOcorrencia = document.querySelector('#telaOcorrencia').value;
+const problemLocation = document.querySelector('#problem-location').value;
 
-const descricaoOS = document.querySelector('#descricaoOS').value;
+const descriptionText = document.querySelector('#description-text').value;
 
 
-function cancelarOS() {
-   document.querySelectorAll('.preenchimentoDeInformacoes').forEach((item) => {item.value = ''});
+function cancelRequest() {
+   document.querySelectorAll('.informations-insert').forEach((item) => {item.value = ''});
 }

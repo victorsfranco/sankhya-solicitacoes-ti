@@ -9,43 +9,43 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Solicitaões T.I - Incluir</title>
+   <title>Solicitações T.I - Incluir</title>
 </head>
 
 <body>
    <main>
-      <header id="cabecario">
+      <header id="header">
          <h1>Solicitações T.I</h1>
       </header>
-      <section id="formulario">
+      <section id="form">
 
-         <ul id="informacoes">
+         <ul id="request-details">
             <li class="item">
-               <label class="label" for="tituloOS">Título:</label>
-               <input class="preenchimentoDeInformacoes" type="text" name="tituloOS" id="tituloOS">
+               <label class="label" for="request-title">Título:</label>
+               <input class="informations-insert" type="text" name="request-title" id="request-title">
             </li>
 
             <li class="item">
-               <label class="label" for="sistemaOS">Sistema:</label>
-               <input class="preenchimentoDeInformacoes" type="text" name="sistemaOS" id="sistemaOS">
+               <label class="label" for="request-system">Sistema:</label>
+               <input class="informations-insert" type="text" name="request-system" id="request-system">
             </li>
 
             <li class="item">
-               <label class="label" for="telaOcorrencia">Em que tela Ocorre:</label>
-               <input class="preenchimentoDeInformacoes" id="telaOcorrencia" type="text">
+               <label class="label" for="problem-location">Em que tela Ocorre:</label>
+               <input class="informations-insert" id="problem-location" type="text">
             </li>
 
          </ul>
 
-         <div id="detalhesOS">
-            <label for="descricaoOS" class="label">Descrição:</label>
-            <textarea class="preenchimentoDeInformacoes" id="descricaoOS" rows="8"></textarea>
+         <div id="request-description">
+            <label for="description-text" class="label">Descrição:</label>
+            <textarea class="informations-insert" id="description-text" rows="8"></textarea>
          </div>
 
-         <div id="botoes">
+         <div id="buttons">
 
-            <button id="botaoCancelar" onclick="cancelarOS()">Cancelar</button>
-            <button id="botaoSalvar">Salvar</button>
+            <button id="cancel-button" onclick="cancelRequest()">Cancelar</button>
+            <button id="save-button">Salvar</button>
 
          </div>
       </section>

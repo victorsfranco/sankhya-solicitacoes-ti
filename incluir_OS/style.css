@@ -16,7 +16,7 @@ body {
 }
 
 /* --- Header --- */
-#cabecario {
+#header {
    font-family: 'Inter';
    display: flex;
    flex-direction: column;
@@ -27,7 +27,7 @@ body {
 
 /* --- Formulário --- */
 
-#formulario {
+#form {
    background-color: #ffffff;
    display: flex;
    flex-direction: column;
@@ -39,7 +39,7 @@ body {
 
 }
 
-#informacoes {
+#request-details {
    list-style: none;
    padding: 1.5rem 1.2rem 1rem 1.2rem;
    width: 100%;
@@ -47,7 +47,7 @@ body {
    justify-content: space-between;
 }
 
-#informacoes input {
+#request-details input {
    padding: 0 1rem;
    background-color: #f4f6f9;
    height: 2rem;
@@ -60,7 +60,7 @@ body {
    margin: 0.25rem 0;
 }
 
-.preenchimentoDeInformacoes {
+.informations-insert {
    border: none;
    border: 0.5px solid #dedede;
    border-radius: 0.2rem;
@@ -75,13 +75,13 @@ body {
    margin: 0 5px;
 }
 
-#detalhesOS {
+#request-description {
    display: flex;
    flex-direction: column;
    width: 100%;
 }
 
-#detalhesOS label {
+#request-description label {
    margin-left: 1.5rem;
 }
 
@@ -91,16 +91,16 @@ textarea {
    margin: 0.25rem 1.5rem;
    resize: none;
    font-family: 'Roboto', sans-serif;
-   /* box-sizing: border-box; */
+   box-sizing: border-box;
 }
 
 /* --- Botões --- */
 
-#botoes {
+#buttons {
    margin: 1rem 1.5rem;
 }
 
-#botoes button {
+#buttons button {
    font-family: 'Inter';
    border: solid 1px #f4f6f9;
    width: 9.3rem;
@@ -108,26 +108,26 @@ textarea {
    margin-right: 1rem;
 }
 
-#botaoSalvar {
+#save-button {
    cursor: pointer;
    color: #ffffff;
    background-color: #007bff;
    border: none;
 }
 
-#botaoSalvar:hover {
+#save-button:hover {
    background-color: #0268d4;
    transition: 0.2s;
 }
 
-#botaoCancelar {
+#cancel-button {
    cursor: pointer;
    color: #FF4646;
    background-color: #ffffff;
    border: none;
 }
 
-#botaoCancelar:hover {
+#cancel-button:hover {
    background-color: #f4f6f9;
    transition: 0.2s;
 }
