@@ -1,83 +1,83 @@
 // Definição do Usuário de inclusão do processamento da O.S
-const autor = 'MYKALESON.SOUSA'
+const author = 'MYKALESON.SOUSA'
 
 // Coleta de Data e Hora Atuais
-const dataLocal = new Date().toLocaleDateString("pt-BR");
+const localData = new Date().toLocaleDateString("pt-BR");
 
-const horaLocal = new Date().toLocaleTimeString("pt-BR", {hour: '2-digit', minute: '2-digit'});
+const localTime = new Date().toLocaleTimeString("pt-BR", {hour: '2-digit', minute: '2-digit'});
 
 
 //Função Oculta Detalhes da O.S
-const detalhesOS = document.getElementById('listaDetalhesOS')
-let detalhesVisiveis = true
-document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
-function ocultarDetalhesOS() {
-   if (detalhesVisiveis == true) {
-      detalhesOS.style.display = 'none'
-      document.getElementById('botaoOcultaDetalhesOS').innerHTML = '+'
-      detalhesVisiveis = false
-   } else if (detalhesVisiveis == false) {
-      detalhesOS.style.display = 'block'
-      document.getElementById('botaoOcultaDetalhesOS').innerHTML = '-'
-      detalhesVisiveis = true
+const requestDetails = document.getElementById('request-details-list')
+let detailsAreVisible = true
+document.getElementById('hide-request-details-button').innerHTML = '-'
+function hideRequestDetails() {
+   if (detailsAreVisible == true) {
+      requestDetails.style.display = 'none'
+      document.getElementById('hide-request-details-button').innerHTML = '+'
+      detailsAreVisible = false
+   } else if (detailsAreVisible == false) {
+      requestDetails.style.display = 'block'
+      document.getElementById('hide-request-details-button').innerHTML = '-'
+      detailsAreVisible = true
    }
 }
 
 //Função Oculta Processamentos da O.S
-const processamentosOS = document.getElementById('Processamentos')
-let processamentosVisiveis = true;
-document.getElementById('botaoOcultaProcessamentos').innerHTML = '-'
+const requestProcessings = document.getElementById('processings')
+let processingsAreVisible = true;
+document.getElementById('hide-processings-button').innerHTML = '-'
 
 function ocultarProcessamentosOS() {
-   if (processamentosVisiveis == true) {
-      processamentosOS.style.display = 'none'
-      document.getElementById('botaoOcultaProcessamentos').innerHTML = '+'
-      processamentosVisiveis = false
-   } else if (processamentosVisiveis == false) {
-      processamentosOS.style.display = 'block'
-      document.getElementById('botaoOcultaProcessamentos').innerHTML = '-'
-      processamentosVisiveis = true
+   if (processingsAreVisible == true) {
+      requestProcessings.style.display = 'none'
+      document.getElementById('hide-processings-button').innerHTML = '+'
+      processingsAreVisible = false
+   } else if (processingsAreVisible == false) {
+      requestProcessings.style.display = 'block'
+      document.getElementById('hide-processings-button').innerHTML = '-'
+      processingsAreVisible = true
    }
 }
 
 //Função Oculta Anexos da O.S
-const anexosOS = document.querySelector('#conteudoAnexos');
-let anexosVisiveis = true;
-document.querySelector("#botaoOcultaAnexos").innerHTML = '-';
+const requestAttachments = document.querySelector('#attachments-content');
+let attachmentsAreVisible = true;
+document.querySelector("#hide-attachments-button").innerHTML = '-';
 
-function ocultaAnexosOS() {
-   if (anexosVisiveis === true) {
-      anexosOS.style.display = 'none';
-      document.querySelector('#botaoOcultaAnexos').innerHTML = '+';
-      anexosVisiveis = false;
-   } else if (anexosVisiveis === false) {
-      anexosOS.style.display = 'block';
-      document.querySelector('#botaoOcultaAnexos').innerHTML = '-';
-      anexosVisiveis = true;
+function hideRequestAttachments() {
+   if (attachmentsAreVisible === true) {
+      requestAttachments.style.display = 'none';
+      document.querySelector('#hide-attachments-button').innerHTML = '+';
+      attachmentsAreVisible = false;
+   } else if (attachmentsAreVisible === false) {
+      requestAttachments.style.display = 'block';
+      document.querySelector('#hide-attachments-button').innerHTML = '-';
+      attachmentsAreVisible = true;
    }
 }
 
 // Array que Receberá os anexos
-const listaAnexos = ['anexo 1', 'asdmasodmasd', 'ssa', 3];
-const autorAnexo = 'VICTOR.FRANCO';
+const attachmentsList = ['anexo 1', 'asdmasodmasd', 'ssa', 3];
+const attachmentAuthor = 'VICTOR.FRANCO';
 
-document.querySelector('#conteudoAnexos').innerHTML = `<ul id="listaAnexos"> ${listaAnexos.map((i) => {
-   return ` <li class= "anexoItem"> <a href= "#"> ${i} </a> ${autorAnexo} | ${dataLocal} ${horaLocal} </li>`
+document.querySelector('#attachments-content').innerHTML = `<ul id="attachments-list"> ${attachmentsList.map((i) => {
+   return ` <li class= "attachment-item"> <a href= "#"> ${i} </a> ${attachmentAuthor} | ${localData} ${localTime} </li>`
 }).join('')} </ul>`
 
-if (listaAnexos.length <= 0) {
-   document.querySelector('#anexos').style.display = 'none';
-} else {document.querySelector('#anexos').style.display = 'block';
+if (attachmentsList.length <= 0) {
+   document.querySelector('#attachments').style.display = 'none';
+} else {document.querySelector('#attachments').style.display = 'block';
 };
 
 
-const textArea = document.querySelector('#retorno');
+const textArea = document.querySelector('#return');
 textArea.value = '';
 
-const retornoOS = document.getElementById('incluirRetorno')
+const retornoOS = document.getElementById('include-return')
 let retornoVisivel = false
 
-function incluirRetorno() {
+function includeReturn() {
    if (retornoVisivel == true) {
       retornoOS.style.display = 'none'
       retornoVisivel = false
@@ -89,28 +89,28 @@ function incluirRetorno() {
 
 //Importação de campos - SANKHYA
 // Número Único da OS:
-document.getElementById('numeroUnicoOS').innerHTML = '#34367'
+document.getElementById('request-unic-number').innerHTML = '#34367'
 
 // Título da OS:
-document.getElementById('tituloOS').innerHTML =
+document.getElementById('request-title').innerHTML =
    'Erro ao alterar tipo de Contrato'
 
 // Solicitante:
-document.getElementById('solicitante').innerHTML = 'VICTOR ANTONIO SILVA FRANCO'
+document.getElementById('requester').innerHTML = 'VICTOR ANTONIO SILVA FRANCO'
 
 //Departamento:
-document.getElementById('departamento').innerHTML =
+document.getElementById('department').innerHTML =
    'TI - TECNOLOGIA INFORMAÇÃO-AUX'
 
 //Sistema:
-document.getElementById('sistemaOS').innerHTML = 'Sankhya - Kothe'
+document.getElementById('request-system').innerHTML = 'Sankhya - Kothe'
 
 //Status:
-document.getElementById('statusOS').innerHTML = 'Encerrada'
+document.getElementById('request-status').innerHTML = 'Encerrada'
 
 //Descrição da O.S:
 document.getElementById(
-   'descricaoOS'
+   'request-description'
 ).innerHTML = `Boa tarde. Na tela Contratos de T.I , estou obtendo o erro
 apresentado na foto em anexo ao tentar alterar o TIPO DE CONTRATO
 do lançamento nº 1 . Desejo alterar o TIPO DE CONTRATO de
@@ -121,32 +121,32 @@ lançamentos.`
 //Inclusão do Processamento da O.S:
 
 const mensagens = []
-let statusOS;
+let requestStatus;
 
-function enviar() {
-   const encerraOS = document.getElementById('encerraOS').value
+function send() {
+   const finishRequest = document.getElementById('status-select').value
 
-   switch (encerraOS) {
-      case 'sim':
-         statusOS = 'Encerrada'
+   switch (finishRequest) {
+      case 'yes':
+         requestStatus = 'Encerrada'
          break
-      case 'nao':
-         statusOS = 'Aguardando atendimento'
+      case 'no':
+         requestStatus = 'Aguardando atendimento'
    }
    mensagens.push(
       `
-    <ul id="processamentoIncluido">
-      <li id="autor">${autor}</li>
-      <li id="status">${statusOS} - ${dataLocal} ${horaLocal}</li>
-      <li>${document.getElementById('retorno').value}</li>
+    <ul id="included-processing">
+      <li id="request-author">${author}</li>
+      <li id="status">${requestStatus} - ${localData} ${localTime}</li>
+      <li>${document.getElementById('return').value}</li>
     </ul>
     `
    )
 
    const listaProcessamentos = mensagens.join('')
 
-   document.getElementById('processamentosExistentes').innerHTML =
+   document.getElementById('current-processing').innerHTML =
       listaProcessamentos
 
-   document.getElementById('retorno').value = ''
+   document.getElementById('return').value = ''
 }

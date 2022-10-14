@@ -17,74 +17,74 @@
 		<header>
 			<h1>Solicitações T.I</h1>
 		</header>
-		<section class="container" id="detalhesOS">
-			<div class="cabecario" id="cabecarioDetalhesOS">
+		<section class="container" id="request-details">
+			<div class="container-header" id="request-details-header">
 				<h3>
-					<span id="numeroUnicoOS"></span> -
-					<span id="tituloOS"></span>
+					<span id="request-unic-number"></span> -
+					<span id="request-title"></span>
 				</h3>
-				<button onclick="ocultarDetalhesOS()" class="botaoAlternaVisualizacao" id="botaoOcultaDetalhesOS"></button>
+				<button onclick="hideRequestDetails()" class="toggle-view-button" id="hide-request-details-button"></button>
 			</div>
 
-			<ul id="listaDetalhesOS">
-				<li class="detalheItem" id="solicitante"></li>
+			<ul id="request-details-list">
+				<li class="detail-item" id="requester"></li>
 
-				<li class="detalheItem" id="departamento"></li>
+				<li class="detail-item" id="department"></li>
 
-				<li class="detalheItem">
+				<li class="detail-item">
 					Sistema:
-					<span id="sistemaOS"></span>
+					<span id="request-system"></span>
 				</li>
 
-				<li class="detalheItem">
+				<li class="detail-item">
 					Status:
-					<span id="statusOS"> Encerrada</span>
+					<span id="request-status"> Encerrada</span>
 				</li>
 
-				<li class="detalheItem" id="">
+				<li class="detail-item" id="details-last-child">
 					Descrição:
-					<span id="descricaoOS"></span>
+					<span id="request-description"></span>
 				</li>
 			</ul>
 		</section>
 
-		<section class="container" id="anexos">
-			<div class="cabecario" id="cabecarioAnexos">
+		<section class="container" id="attachments">
+			<div class="container-header">
 				<h3>Anexos</h3>
-				<button class="botaoAlternaVisualizacao" id="botaoOcultaAnexos" onclick="ocultaAnexosOS()"></button>
+				<button class="toggle-view-button" id="hide-attachments-button" onclick="hideRequestAttachments()"></button>
 			</div>
-			<div id="conteudoAnexos"></div>
+			<div id="attachments-content"></div>
 		</section>
 
 		<section class="container">
-			<div class="cabecario" id="cabecarioProcessamentosOS">
+			<div class="container-header" id="request-processing-header">
 				<h3>Atividades Recentes</h3>
 
-				<button id="botaoIncluiRetorno" onclick="incluirRetorno()">
+				<button id="include-return-button" onclick="includeReturn()">
 					Incluir Retorno
 				</button>
 
-				<button onclick="ocultarProcessamentosOS()" class="botaoAlternaVisualizacao"
-					id="botaoOcultaProcessamentos"></button>
+				<button onclick="ocultarProcessamentosOS()" class="toggle-view-button"
+					id="hide-processings-button"></button>
 			</div>
-			<div id="Processamentos">
-				<div id="incluirRetorno">
-					<div id="selecaoEncerramento">
-						<label for="encerraOS">Encerrar O.S:</label>
-						<select name="encerraOS" id="encerraOS">
-							<option value="sim">Sim</option>
-							<option value="nao">Não</option>
+			<div id="processings">
+				<div id="include-return">
+					<div id="finish-request">
+						<label for="status-select">Encerrar O.S:</label>
+						<select name="status-select" id="status-select">
+							<option value="yes">Sim</option>
+							<option value="no">Não</option>
 						</select>
 					</div>
-					<label for="retorno" id="labelRetorno">Retorno:</label>
-					<textarea name="retorno" id="retorno" cols="30" rows="10">
+					<label for="return" id="return-label">Retorno:</label>
+					<textarea name="return" id="return" cols="30" rows="10">
                   </textarea>
-					<button id="botaoEnvia" onclick="enviar()">Enviar</button>
+					<button id="send-button" onclick="send()">Enviar</button>
 				</div>
-				<div id="processamentosExistentes"></div>
+				<div id="current-processing"></div>
 			</div>
 		</section>
-		<footer id="rodape">
+		<footer id="footer">
 			<h3>Kothe</h3>
 			<p>Depto. Desenvolvimento - &copy; Direitos Reservados</p>
 		</footer>
