@@ -19,7 +19,6 @@ body {
 header {
 	font-family: 'Inter';
 	background-color: #f4f6f9;
-	/* background-color: red; */
 	margin-bottom: 1.5rem;
 	padding: 3rem;
 	width: 100%;
@@ -50,8 +49,16 @@ header h1 {
 
 }
 
-#quit-button {
+#quit-button:hover {
 	cursor: pointer;
+	box-shadow: 2px 2px 4px #ddd;
+	transition: 0.25s;
+	background-color: #2C549C;
+	color: #ffffff
+}
+
+#quit-button:not(hover) {
+	transition: 0.25s;
 }
 
 main {
@@ -85,6 +92,7 @@ main {
 }
 
 .toggle-view-button:hover {
+	transition: 0.25s;
 	cursor: pointer;
 	color: #0268d4;
 }
@@ -161,6 +169,10 @@ main {
 	cursor: pointer;
 }
 
+#include-return-button:not(hover) {
+	transition: 0.25s;
+}
+
 #processings * {
 	background-color: #ffffff;
 	margin: 0rem;
@@ -215,9 +227,6 @@ main {
 	border: 0.5px solid #dedede;
 	border-radius: 0.2rem;
 	outline: none;
-}
-
-#status-select:hover {
 	cursor: pointer;
 }
 
@@ -245,7 +254,7 @@ main {
 	resize: none;
 }
 
-#include-return button {
+#send-button {
 	color: #fff;
 	background-color: #2C549C;
 	padding: 0.5rem;
@@ -254,10 +263,14 @@ main {
 	border-radius: 0.2rem;
 }
 
-#include-return button:hover {
+#send-button:hover {
 	background-color: #0268d4;
-	transition: 0.2s;
+	transition: 0.25s;
 	cursor: pointer;
+}
+
+#send-button:not(hover) {
+	transition: 0.25s;
 }
 
 #send-button {
