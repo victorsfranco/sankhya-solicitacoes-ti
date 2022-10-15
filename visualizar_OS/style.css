@@ -57,9 +57,6 @@ header h1 {
 	color: #ffffff
 }
 
-#quit-button:not(hover) {
-	transition: 0.25s;
-}
 
 main {
 	padding: 2rem 8rem;
@@ -90,6 +87,11 @@ main {
 	position: absolute;
 	right: 9rem;
 }
+
+.action-buttons:not(hover) {
+	transition: 0.25s;
+}
+
 
 .toggle-view-button:hover {
 	transition: 0.25s;
@@ -167,10 +169,6 @@ main {
 	background-color: #0268d4;
 	transition: 0.2s;
 	cursor: pointer;
-}
-
-#include-return-button:not(hover) {
-	transition: 0.25s;
 }
 
 #processings * {
@@ -267,10 +265,6 @@ main {
 	background-color: #0268d4;
 	transition: 0.25s;
 	cursor: pointer;
-}
-
-#send-button:not(hover) {
-	transition: 0.25s;
 }
 
 #send-button {
