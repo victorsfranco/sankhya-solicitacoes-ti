@@ -79,6 +79,11 @@ main {
 	align-items: center;
 }
 
+.container-header h3 {
+	font-family: 'Inter';
+	margin-right: 0.5rem;
+}
+
 .toggle-view-button {
 	background-color: #f4f6f9;
 	color: #2C549C;
@@ -154,7 +159,7 @@ main {
 
 /* --- Processamentos --- */
 
-#include-return-button {
+.main-buttons {
 	font-family: 'Inter';
 	font-size: 0.875rem;
 	background-color: #2C549C;
@@ -165,8 +170,8 @@ main {
 	border-radius: 0.2rem;
 }
 
-#include-return-button:hover {
-	background-color: #0268d4;
+.main-buttons:hover {
+	background-color: #0268d4 !important;
 	transition: 0.2s;
 	cursor: pointer;
 }
@@ -174,11 +179,6 @@ main {
 #processings * {
 	background-color: #ffffff;
 	margin: 0rem;
-}
-
-#request-processing-header h3 {
-	font-family: 'Inter';
-	margin-right: 0.5rem;
 }
 
 #processings ul {
@@ -253,23 +253,8 @@ main {
 }
 
 #send-button {
-	color: #fff;
-	background-color: #2C549C;
-	padding: 0.5rem;
-	font-weight: 600;
-	border: none;
-	border-radius: 0.2rem;
-}
-
-#send-button:hover {
-	background-color: #0268d4;
-	transition: 0.25s;
-	cursor: pointer;
-}
-
-#send-button {
-	font-family: 'Inter';
 	margin: 2rem 1rem;
+	background-color: #2C549C;
 }
 
 /* --- Rodapé --- */

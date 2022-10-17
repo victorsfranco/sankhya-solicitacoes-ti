@@ -17,6 +17,7 @@
 		<header>
 			<button class="action-buttons" id="quit-button">Voltar</button>
 			<h1>Solicitações T.I</h1>
+
 		</header>
 		<section class="container" id="request-details">
 			<div class="container-header" id="request-details-header">
@@ -52,16 +53,19 @@
 		<section class="container" id="attachments">
 			<div class="container-header">
 				<h3>Anexos</h3>
+				<button class="main-buttons" id="include-attachment-button">Incluir Anexo</button>
 				<button class="toggle-view-button" id="hide-attachments-button" onclick="hideRequestAttachments()"></button>
 			</div>
-			<div id="attachments-content"></div>
+			<div id="attachments-content">
+
+			</div>
 		</section>
 
 		<section class="container">
 			<div class="container-header" id="request-processing-header">
 				<h3>Atividades Recentes</h3>
 
-				<button class="action-buttons" id="include-return-button" onclick="includeReturn()">
+				<button class="main-buttons" id="include-return-button" onclick="includeReturn()">
 					Incluir Retorno
 				</button>
 
@@ -80,7 +84,7 @@
 					<label for="return" id="return-label">Retorno:</label>
 					<textarea name="return" id="return" cols="30" rows="10">
                   </textarea>
-					<button class="action-buttons" id="send-button" onclick="send()">Enviar</button>
+					<button class="main-buttons" id="send-button" onclick="send()">Enviar</button>
 				</div>
 				<div id="current-processing"></div>
 			</div>

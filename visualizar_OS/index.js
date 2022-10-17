@@ -43,22 +43,29 @@ function ocultarProcessamentosOS() {
 //Função Oculta Anexos da O.S
 const requestAttachments = document.querySelector('#attachments-content');
 let attachmentsAreVisible = true;
-document.querySelector("#hide-attachments-button").innerHTML = '-';
+const attachmentsList = ['Anexo1.png', 'Anexo2.pdf', 'Anexo3.xls'];
+
+if (attachmentsList.length >= 1) {
+   document.querySelector("#hide-attachments-button").innerHTML = '-';
+}
 
 function hideRequestAttachments() {
-   if (attachmentsAreVisible === true) {
+   if (attachmentsAreVisible === true && attachmentsList.length >= 1) {
       requestAttachments.style.display = 'none';
       document.querySelector('#hide-attachments-button').innerHTML = '+';
       attachmentsAreVisible = false;
-   } else if (attachmentsAreVisible === false) {
+   } else if (attachmentsAreVisible === false && attachmentsList.length >= 1) {
       requestAttachments.style.display = 'block';
+      document.querySelector('#hide-attachments-button').innerHTML = '-';
+      attachmentsAreVisible = true;
+   } else if (attachmentsAreVisible === false) {
       document.querySelector('#hide-attachments-button').innerHTML = '-';
       attachmentsAreVisible = true;
    }
 }
 
 // Array que Receberá os anexos
-const attachmentsList = ['Anexo 1', 'Foto2.pdf', 'img3.ong'];
+
 const attachmentAuthor = 'VICTOR.FRANCO';
 
 document.querySelector('#attachments-content').innerHTML = `<ul id="attachments-list"> ${attachmentsList.map((i) => {
@@ -66,8 +73,8 @@ document.querySelector('#attachments-content').innerHTML = `<ul id="attachments-
 }).join('')} </ul>`
 
 if (attachmentsList.length <= 0) {
-   document.querySelector('#attachments').style.display = 'none';
-} else {document.querySelector('#attachments').style.display = 'block';
+   document.querySelector('#attachments-content').style.display = 'none';
+} else {document.querySelector('#attachments-content').style.display = 'block';
 };
 
 
