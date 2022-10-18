@@ -6,3 +6,19 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	display: grid;
+	grid-template-columns: 2fr 8fr;
+	gap: 1.5rem;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#request-list {
+	list-style: none;
+}
