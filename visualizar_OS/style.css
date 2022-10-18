@@ -149,8 +149,26 @@ main {
 	padding: 1rem;
 }
 
+#attachments-list a {
+	margin: 0 0.5rem;
+}
+
+.icon {
+	background-image: url('./download-icon.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	background-color: #ffffff;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border: none;
+}
+
 .attachment-item {
 	padding-bottom: 0.5rem;
+	display: flex;
 }
 
 .attachment-item:last-child {

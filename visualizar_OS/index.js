@@ -69,14 +69,13 @@ function hideRequestAttachments() {
 const attachmentAuthor = 'VICTOR.FRANCO';
 
 document.querySelector('#attachments-content').innerHTML = `<ul id="attachments-list"> ${attachmentsList.map((i) => {
-   return ` <li class= "attachment-item"> <a href= "#"> ${i} </a> ${attachmentAuthor} | ${localData} ${localTime} </li>`
+   return ` <li class= "attachment-item"> <button class="icon"></button> <a href= "#"> ${i} </a> ${attachmentAuthor} | ${localData} ${localTime} </li>`
 }).join('')} </ul>`
 
 if (attachmentsList.length <= 0) {
    document.querySelector('#attachments-content').style.display = 'none';
 } else {document.querySelector('#attachments-content').style.display = 'block';
 };
-
 
 const textArea = document.querySelector('#return');
 textArea.value = '';
