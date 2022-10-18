@@ -6,6 +6,20 @@ const localData = new Date().toLocaleDateString("pt-BR");
 
 const localTime = new Date().toLocaleTimeString("pt-BR", {hour: '2-digit', minute: '2-digit'});
 
+//Função inclui o anexo
+function attach() {
+   console.log('Attach some file')
+}
+
+// Função faz Download do Anexo
+function downloadAttachment() {
+   console.log('Download the Attachment');
+}
+
+//Função exibe o Anexo
+function showAttachment() {
+   console.log('Show attachment');
+}
 
 //Função Oculta Detalhes da O.S
 const requestDetails = document.getElementById('request-details-list')
@@ -64,12 +78,20 @@ function hideRequestAttachments() {
    }
 }
 
+
 // Array que Receberá os anexos
 
 const attachmentAuthor = 'VICTOR.FRANCO';
 
 document.querySelector('#attachments-content').innerHTML = `<ul id="attachments-list"> ${attachmentsList.map((i) => {
-   return ` <li class= "attachment-item"> <button class="icon"></button> <a href= "#"> ${i} </a> ${attachmentAuthor} | ${localData} ${localTime} </li>`
+
+   return `
+      <li class= "attachment-item">
+         <button onclick= "downloadAttachment()" class="icon"></button>
+         <a onclick="showAttachment()" href= "#"> ${i} </a>
+         ${attachmentAuthor} | ${localData} ${localTime}
+      </li>
+   `
 }).join('')} </ul>`
 
 if (attachmentsList.length <= 0) {
