@@ -11,153 +11,206 @@
 
 <body>
 
-	<aside>
+	<header id="header">
+		<h2>Solicitações T.I</h2>
+		<button class="buttons" id="new-request-button">Nova O.S</button>
+	</header>
 
-		<form id="form" action="">
-
-			<label for="data_inclusao">Data de Inclusão:</label>
-			<input type="date" name="data_inclusao_inicio" id="data_inclusao_inicio">
-			<span>a</span>
-			<input type="date" name="data_inclusao_fim" id="data_inclusao_fim">
-
-			<label for="numero_unico">Número Único:</label>
-			<input type="text" name="numero_unico" id="numero_unico">
-
-			<label for="titulo_descricao">Título/Descrição:</label>
-			<input type="text" name="titulo_descricao" id="titulo_descricao">
-
-			<label for="solicitante">Solicitante:</label>
-			<input type="text" name="solicitante" id="solicitante">
+	<main id="main">
 
 
-			<div id="status">
+		<aside>
 
-				<input type="checkbox" checked name="todos" id="todos">
-				<label for="todos">Todos</label>
+			<form id="form" action="">
 
-				<input type="checkbox" checked name="aberta" id="aberta">
-				<label for="aberta">Aberta</label>
+				<label for="data_inclusao">Data de Inclusão:</label>
+				<div class="form-box" id="inclusion-date-box">
 
-				<input type="checkbox" checked name="atribuida" id="atribuida">
-				<label for="atribuida">Atribuída</label>
+					<input type="date" placeholder="aaaaa" class="input-date">
+					<input type="date" class="input-date">
 
-				<input type="checkbox" checked name="aguardando_atendimento" id="aguardando_atendimento">
-				<label for="aguardando_atendimento">Aguardando Atendimento</label>
+				</div>
 
-				<input type="checkbox" checked name="em_atendimento" id="em_atendimento">
-				<label for="em_atendimento">Em Atendimento</label>
+				<div class="form-box">
 
-				<input type="checkbox" checked name="aguardando_retorno_solicitante" id="aguardando_retorno_solicitante">
-				<label for="aguardando_retorno_solicitante">Aguardando Retorno do Solicitante</label>
+					<label for="unique-number">Número Único:</label>
+					<input type="text" class="form-input" id="unique-number">
 
-				<input type="checkbox" checked name="concluida" id="concluida">
-				<label for="concluida">Concluída</label>
+				</div>
 
-				<input type="checkbox" checked name="encerrada" id="encerrada">
-				<label for="encerrada">Encerrada</label>
+				<div class="form-box">
 
-				<input type="checkbox" checked name="cancelada" id="cancelada">
-				<label for="cancelada">Cancelada</label>
+					<label for="title-description">Título/Descrição:</label>
+					<input type="text" class="form-input" id="title-description">
 
-			</div>
+				</div>
 
-			<button type="submit">Aplicar</button>
-		</form>
+				<div class="form-box">
 
-	</aside>
+					<label for="requester">Solicitante:</label>
+					<input type="text" class="form-input" id="requester">
 
-	<div id="requests">
-		<ul id="request-list">
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-			<li class="request-informations">
-				<p class="request-unic-number">36860</p>
-				<p class="request-title">App Checklist</p>
-				<p class="request-description">Botao de salvar nao está Sendo...</p>
-				<p class="request-responsible"> Victor Franco</p>
-				<p class="request-include-date">29/10/2022</p>
-				<p class="request-status">Concluída</p>
-			</li>
-		</ul>
-	</div>
+				</div>
+
+
+
+				<div id="status">
+
+					<h4 id="">Status</h4>
+
+					<label>
+						Todos
+						<input type="checkbox" checked id="todos">
+					</label>
+
+					<label>
+						Aberta
+						<input type="checkbox" checked id="aberta">
+					</label>
+
+					<label>
+						Atribuída
+						<input type="checkbox" checked id="atribuida">
+					</label>
+
+					<label>
+						Aguardando Atendimento
+						<input type="checkbox" checked id="aguardando_atendimento">
+					</label>
+
+					<label>
+						Em Atendimento
+						<input type="checkbox" checked id="em_atendimento">
+					</label>
+
+					<label>
+						Aguard. Retorno do Solicitante
+						<input type="checkbox" checked id="aguardando_retorno_solicitante">
+					</label>
+
+					<label>
+						Concluída
+						<input type="checkbox" checked id="concluida">
+					</label>
+
+					<label>
+						Encerrada
+						<input type="checkbox" checked id="encerrada">
+					</label>
+
+					<label>
+						Cancelada
+						<input type="checkbox" checked id="cancelada">
+					</label>
+
+				</div>
+
+				<button type="submit" id="aplly-button">Aplicar</button>
+			</form>
+
+		</aside>
+
+		<div id="requests">
+			<ul id="request-list">
+				<li class="request-label">
+					<p>Núm. Único O.S</p>
+					<p>Título</p>
+					<p>Descrição</p>
+					<p>Responsável</p>
+					<p>DH inclusão</p>
+					<p>Status</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+				<li class="request-informations">
+					<p class="request-unic-number">36860</p>
+					<p class="request-title">App Checklist</p>
+					<p class="request-description">Botao de salvar nao está Sendo...</p>
+					<p class="request-responsible"> Victor Franco</p>
+					<p class="request-include-date">29/10/2022</p>
+					<p class="request-status">Concluída</p>
+				</li>
+			</ul>
+		</div>
+	</main>
 
 	<script src="index.js"></script>
 </body>
