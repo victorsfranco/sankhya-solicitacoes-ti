@@ -23,89 +23,81 @@
 
 			<form id="form" action="">
 
-				<label for="data_inclusao">Data de Inclusão:</label>
-				<div class="form-box" id="inclusion-date-box">
+				<label class="form-box">
+					Data de Inclusão
+					<div id="inclusion-date-box">
+						<input type="date" class="input-date">
+						<input type="date" class="input-date">
+					</div>
+				</label>
 
-					<input type="date" placeholder="aaaaa" class="input-date">
-					<input type="date" class="input-date">
-
-				</div>
-
-				<div class="form-box">
-
-					<label for="unique-number">Número Único:</label>
+				<label class="form-box">
+					Número Único
 					<input type="text" class="form-input" id="unique-number">
+				</label>
 
-				</div>
-
-				<div class="form-box">
-
-					<label for="title-description">Título/Descrição:</label>
+				<label class="form-box">
+					Título/Descrição
 					<input type="text" class="form-input" id="title-description">
+				</label>
 
-				</div>
-
-				<div class="form-box">
-
-					<label for="requester">Solicitante:</label>
+				<label class="form-box">
+					Solicitante
 					<input type="text" class="form-input" id="requester">
+				</label>
 
-				</div>
-
-
-
-				<div id="status">
+				<div id="status-box">
 
 					<h4 id="">Status</h4>
 
-					<label>
-						Todos
+					<label class="status-label">
 						<input type="checkbox" checked id="todos">
+						Todos
 					</label>
 
-					<label>
-						Aberta
+					<label class="status-label">
 						<input type="checkbox" checked id="aberta">
+						Aberta
 					</label>
 
-					<label>
-						Atribuída
+					<label class="status-label">
 						<input type="checkbox" checked id="atribuida">
+						Atribuída
 					</label>
 
-					<label>
-						Aguardando Atendimento
+					<label class="status-label">
 						<input type="checkbox" checked id="aguardando_atendimento">
+						Aguardando Atendimento
 					</label>
 
-					<label>
-						Em Atendimento
+					<label class="status-label">
 						<input type="checkbox" checked id="em_atendimento">
+						Em Atendimento
 					</label>
 
-					<label>
-						Aguard. Retorno do Solicitante
+					<label class="status-label">
 						<input type="checkbox" checked id="aguardando_retorno_solicitante">
+						Aguardando Retorno do Solicitante
 					</label>
 
-					<label>
-						Concluída
+					<label class="status-label">
 						<input type="checkbox" checked id="concluida">
+						Concluída
 					</label>
 
-					<label>
-						Encerrada
+					<label class="status-label">
 						<input type="checkbox" checked id="encerrada">
+						Encerrada
 					</label>
 
-					<label>
-						Cancelada
+					<label class="status-label">
 						<input type="checkbox" checked id="cancelada">
+						Cancelada
 					</label>
 
 				</div>
 
-				<button type="submit" id="aplly-button">Aplicar</button>
+				<button type="submit" class="buttons" id="aplly-button">Aplicar</button>
 			</form>
 
 		</aside>
