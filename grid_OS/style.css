@@ -25,12 +25,17 @@ body {
 
 #main {
 	display: grid;
-	grid-template-columns: 2fr 8fr;
+	grid-template-columns: 1fr 10fr;
 	gap: 1.5rem;
 	margin-top: 3rem;
 }
 
 /* ----- Request Filters ----- */
+
+aside {
+	max-width: 280px;
+	mix-width: 130px;
+}
 
 input {
 	outline: none;
@@ -43,16 +48,9 @@ input {
 	align-items: flex-start;
 }
 
-#inclusion-date-box {
-	display: flex;
-	flex-direction: row;
-}
-
 .input-date {
-	width: 7.25rem !important;
 	height: 2.5rem;
 	margin-top: 0.25rem;
-
 	border: 1px solid #D7D8DA;
 	border-radius: 3px;
 
@@ -63,6 +61,7 @@ input {
 }
 
 #inclusion-date-box {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 }
@@ -73,13 +72,13 @@ input {
 }
 
 .form-box {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 1rem;
 }
 
 .form-input {
-
 	width: 100%;
 	height: 2.5rem;
 	margin-top: 0.25rem;
@@ -131,7 +130,7 @@ input[type=checkbox] {
 }
 
 aside button {
-	padding: 0.5rem 7rem;
+	padding: 0.5rem 7.4rem;
 }
 
 header button {
