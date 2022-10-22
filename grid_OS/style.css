@@ -34,7 +34,6 @@ body {
 
 aside {
 	max-width: 280px;
-	mix-width: 130px;
 }
 
 input {
@@ -139,15 +138,27 @@ header button {
 
 /* ----- Requests Show ----- */
 
-#request-list {
+#request-table {
 	list-style: none;
+	border: 1px solid #F2F2F2;
+	border-radius: 8px;
 
 }
 
-.request-label {
+.table-header {
 	display: flex;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+.table-header-label {
+	margin: 0 0.75rem;
 }
 
 .request-informations {
 	display: flex;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+.request-data {
+	margin: 0 0.75rem;
 }
