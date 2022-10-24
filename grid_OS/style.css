@@ -142,23 +142,31 @@ header button {
 	list-style: none;
 	border: 1px solid #F2F2F2;
 	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 
 }
 
 .table-header {
 	display: flex;
 	border-bottom: 1px solid #F2F2F2;
+	justify-content: space-between;
 }
 
 .table-header-label {
+	display: flex;
+	align-items: flex-start;
 	margin: 0 0.75rem;
 }
 
 .request-informations {
 	display: flex;
 	border-bottom: 1px solid #F2F2F2;
+	justify-content: space-between;
 }
 
 .request-data {
 	margin: 0 0.75rem;
+	padding: 1.25rem 0rem;
 }
