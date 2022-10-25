@@ -13,49 +13,43 @@
 </head>
 
 <body>
-   <main>
+   <main id="form">
+
       <header id="header">
-         <button class="action-buttons" id="quit-button">Voltar</button>
-         <h1>Solicitações T.I</h1>
+         <h4 id="form-title">Cadastro de O.S</h4>
+         <button id="close-icon">x</button>
       </header>
-      <section id="form">
 
-         <ul id="request-details">
-            <li class="item">
-               <label class="label" for="request-title">Título:</label>
-               <input class="informations-insert" type="text" name="request-title" id="request-title">
-            </li>
+      <ul id="request-details">
+         <li class="item">
+            <label class="label" for="request-title">Título</label>
+            <input class="informations-insert" type="text" name="request-title" id="request-title">
+         </li>
 
-            <li class="item">
-               <label class="label" for="request-system">Sistema:</label>
-               <input class="informations-insert" type="text" name="request-system" id="request-system">
-            </li>
+         <li class="item">
+            <label class="label" for="request-system">Sistema</label>
+            <input class="informations-insert" type="text" name="request-system" id="request-system">
+         </li>
 
-            <li class="item">
-               <label class="label" for="problem-location">Em que tela Ocorre:</label>
-               <input class="informations-insert" id="problem-location" type="text">
-            </li>
+         <li class="item">
+            <label class="label" for="problem-location">Tela em que Ocorre</label>
+            <input class="informations-insert" id="problem-location" type="text">
+         </li>
 
-         </ul>
+      </ul>
 
-         <div id="request-description">
-            <label for="description-text" class="label">Descrição:</label>
-            <textarea class="informations-insert" id="description-text" rows="8"></textarea>
-         </div>
+      <div id="request-description">
+         <label for="description-text" class="label">Descrição</label>
+         <textarea class="informations-insert" id="description-text" rows="8"></textarea>
+      </div>
 
-         <div id="buttons">
+      <footer id="footer">
 
-            <button class="action-buttons" id="cancel-button" onclick="cancelRequest()">Cancelar</button>
-            <button class="action-buttons" id="save-button">Salvar</button>
+         <button class="buttons" id="cancel-button" onclick="cancelRequest()">Cancelar</button>
+         <button class="buttons" id="save-button">Salvar</button>
 
-         </div>
-      </section>
-
+      </footer>
    </main>
-   <footer>
-      <h3>Kothe</h3>
-      <p>Depto. Desenvolvimento - &copy; Direitos Resevados</p>
-   </footer>
 
    <script src="index.js"></script>
 </body>

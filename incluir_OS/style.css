@@ -8,55 +8,50 @@
 }
 
 body {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Inter';
+   font-size: 14px;
    background-color: #f4f6f9;
    max-width: 1490px;
    margin: 0 auto;
    padding: 0 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 /* --- Header --- */
 #header {
    font-family: 'Inter';
    display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 3rem;
-   position: relative;
+   width: 100%;
+   justify-content: space-between;
+   border-bottom: 1px solid #D7D8DA;
 }
 
-#quit-button {
-   font-family: 'Inter';
-   font-weight: 700;
-   color: #2C549C;
-   padding: 0.75rem 1.25rem;
+#form-title {
+   margin: 0.75rem 1.5rem;
+   font-size: 16px;
+}
+
+#close-icon {
+   background-image: url('./close_icon.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
    background-color: #ffffff;
-   border: 1px solid #D7D8DA;
-   border-radius: 0.25rem;
-   box-shadow: 1px 1px 4px #ddd;
-
-   position: absolute;
-   left: 0;
-   top: 45.6px;
-
-
-}
-
-#quit-button:hover {
+   font-weight: 300;
+   margin: 0.75rem 1.5rem;
+   width: 20px;
+   height: 20px;
    cursor: pointer;
-   box-shadow: 2px 2px 4px #ddd;
-   transition: 0.25s;
-   background-color: #2C549C;
-   color: #ffffff
+   border: none;
 }
 
-.action-buttons:not(hover) {
-   transition: 0.25s;
-}
-
-/* --- Formulário --- */
+/* --- Form --- */
 
 #form {
+   margin: 1rem;
    background-color: #ffffff;
    display: flex;
    flex-direction: column;
@@ -78,23 +73,19 @@ body {
 
 #request-details input {
    padding: 0 1rem;
-   background-color: #f4f6f9;
    height: 2rem;
    width: 100%;
 }
 
 .label {
-   font-family: 'Inter';
-   font-size: 0.875rem;
    margin: 0.25rem 0;
 }
 
 .informations-insert {
    border: none;
-   border: 0.5px solid #dedede;
-   border-radius: 0.2rem;
+   border: 1px solid #D7D8DA;
+   border-radius: 3px;
    outline: none;
-   font-size: 1rem;
 }
 
 .item {
@@ -115,67 +106,51 @@ body {
 }
 
 textarea {
+   font-family: 'Inter';
    padding: 1rem;
-   background-color: #f4f6f9;
    margin: 0.25rem 1.5rem;
    resize: none;
-   font-family: 'Roboto', sans-serif;
    box-sizing: border-box;
+   border: 1px solid #D7D8DA;
+   border-radius: 3px;
 }
 
-/* --- Botões --- */
+/* --- Buttons --- */
 
-#buttons {
-   margin: 1rem 1.5rem;
+#footer {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
 }
 
-#buttons button {
+.buttons {
    font-family: 'Inter';
-   border: solid 1px #f4f6f9;
+   font-weight: 500;
+   border: 1px solid #D7D8DA;
+   border-radius: 3px;
    width: 9.3rem;
    height: 2.5rem;
-   margin-right: 1rem;
+   margin: 1.25rem 1.5rem 2rem 0rem;
+   transition: 0.25s;
+   cursor: pointer;
 }
 
 #save-button {
-   cursor: pointer;
+
    color: #ffffff;
    background-color: #2C549C;
-   border: none;
 }
 
 #save-button:hover {
    background-color: #0268d4;
-   transition: 0.2s;
 }
 
 #cancel-button {
-   cursor: pointer;
-   color: #FF4646;
+   color: #2C549C;
    background-color: #ffffff;
-   border: none;
 }
 
 #cancel-button:hover {
-   background-color: #f4f6f9;
-   transition: 0.2s;
-}
-
-/* --- Footer --- */
-
-footer {
-   font-family: 'Inter';
-   margin-top: 2rem;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 1rem;
-}
-
-footer h3 {
-   font-size: 1.5rem;
-   font-weight: 500;
-   padding-bottom: 0.5rem;
-   color: #2C549C;
+   background-color: #2C549C;
+   color: #ffffff;
 }
