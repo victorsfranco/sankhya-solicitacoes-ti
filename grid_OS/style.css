@@ -149,24 +149,25 @@ header button {
 }
 
 .table-header {
-	display: flex;
 	border-bottom: 1px solid #F2F2F2;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .table-header-label {
-	display: flex;
-	align-items: flex-start;
-	margin: 0 0.75rem;
+	text-align: left;
+	margin: 0.5rem 0.75rem;
 }
 
 .request-informations {
-	display: flex;
 	border-bottom: 1px solid #F2F2F2;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .request-data {
+	/* text-align: left; */
 	margin: 0 0.75rem;
 	padding: 1.25rem 0rem;
+	min-width: 200px;
 }
