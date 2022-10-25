@@ -8,5 +8,5 @@ const descriptionText = document.querySelector('#description-text').value;
 
 
 function cancelRequest() {
-   document.querySelectorAll('.informations-insert').forEach((item) => {item.value = ''});
+   console.log('Cancelou');
 }
