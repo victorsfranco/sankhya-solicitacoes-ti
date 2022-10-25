@@ -151,22 +151,24 @@ header button {
 .table-header {
 	border-bottom: 1px solid #F2F2F2;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr;
 }
 
 .table-header-label {
+	color: #828282;
+	font-weight: 500;
 	text-align: left;
 	margin: 0.5rem 0.75rem;
+	min-width: 200px;
 }
 
 .request-informations {
 	border-bottom: 1px solid #F2F2F2;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr;
 }
 
 .request-data {
-	/* text-align: left; */
 	margin: 0 0.75rem;
 	padding: 1.25rem 0rem;
 	min-width: 200px;
