@@ -103,6 +103,10 @@ main {
 	color: #0268d4;
 }
 
+.header-content {
+	display: flex;
+	align-items: center;
+}
 
 /* --- Informações da O.S --- */
 
