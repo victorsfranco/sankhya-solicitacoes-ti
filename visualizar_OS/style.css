@@ -77,10 +77,15 @@ main {
 	display: flex;
 	padding: 1rem;
 	border: 0.5px solid #dedede;
-	border-radius: 0.25rem 0.25rem 0.1rem 0;
+	border-radius: 0.25rem 0.25rem 0 0;
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
 }
 
 .container-header h3 {
@@ -103,10 +108,6 @@ main {
 	color: #0268d4;
 }
 
-.header-content {
-	display: flex;
-	align-items: center;
-}
 
 /* --- Informações da O.S --- */
 
@@ -219,11 +220,11 @@ main {
 }
 
 #included-processing {
-	margin: 0;
 	margin-bottom: 1.5rem;
 }
 
 #current-processing {
+	display: none;
 	background-color: #ffffff;
 }
 
@@ -275,7 +276,7 @@ main {
 }
 
 #send-button {
-	margin: 2rem 1rem;
+	margin: 2rem 1rem 2rem 1rem;
 	background-color: #2C549C;
 }
 

@@ -4,7 +4,7 @@ const author = 'MYKALESON.SOUSA'
 // Coleta de Data e Hora Atuais
 const localData = new Date().toLocaleDateString("pt-BR");
 
-const localTime = new Date().toLocaleTimeString("pt-BR", {hour: '2-digit', minute: '2-digit'});
+const localTime = new Date().toLocaleTimeString("pt-BR", { hour: '2-digit', minute: '2-digit' });
 
 //Função inclui o anexo
 function attach() {
@@ -23,8 +23,11 @@ function showAttachment() {
 
 //Função Oculta Detalhes da O.S
 const requestDetails = document.getElementById('request-details-list')
+
 let detailsAreVisible = true
+
 document.getElementById('hide-request-details-button').innerHTML = '-'
+
 function hideRequestDetails() {
    if (detailsAreVisible == true) {
       requestDetails.style.display = 'none'
@@ -39,7 +42,9 @@ function hideRequestDetails() {
 
 //Função Oculta Processamentos da O.S
 const requestProcessings = document.getElementById('processings')
+
 let processingsAreVisible = true;
+
 document.getElementById('hide-processings-button').innerHTML = '-'
 
 function ocultarProcessamentosOS() {
@@ -56,7 +61,9 @@ function ocultarProcessamentosOS() {
 
 //Função Oculta Anexos da O.S
 const requestAttachments = document.querySelector('#attachments-content');
+
 let attachmentsAreVisible = true;
+
 const attachmentsList = ['Anexo1.png', 'Anexo2.pdf', 'Anexo3.xls'];
 
 if (attachmentsList.length >= 1) {
@@ -96,7 +103,8 @@ document.querySelector('#attachments-content').innerHTML = `<ul id="attachments-
 
 if (attachmentsList.length <= 0) {
    document.querySelector('#attachments-content').style.display = 'none';
-} else {document.querySelector('#attachments-content').style.display = 'block';
+} else {
+   document.querySelector('#attachments-content').style.display = 'block';
 };
 
 const textArea = document.querySelector('#return');
@@ -139,7 +147,7 @@ document.getElementById('request-status').innerHTML = 'Encerrada'
 //Descrição da O.S:
 document.getElementById(
    'request-description'
-).innerHTML = `Boa tarde. Na tela Contratos de T.I , estou obtendo o erro
+).innerHTML = `<br>Boa tarde. Na tela Contratos de T.I , estou obtendo o erro
 apresentado na foto em anexo ao tentar alterar o TIPO DE CONTRATO
 do lançamento nº 1 . Desejo alterar o TIPO DE CONTRATO de
 "INTERNET" para "PRESTAÇÃO DE SERVIÇOS", e não estou conseguindo
@@ -148,10 +156,13 @@ lançamentos.`
 
 //Inclusão do Processamento da O.S:
 
-const mensagens = []
+const messages = []
 let requestStatus;
 
 function send() {
+
+   document.getElementById('current-processing').style.display = 'block';
+
    const finishRequest = document.getElementById('status-select').value
 
    switch (finishRequest) {
@@ -161,17 +172,31 @@ function send() {
       case 'no':
          requestStatus = 'Aguardando atendimento'
    }
-   mensagens.push(
-      `
-    <ul id="included-processing">
-      <li id="request-author">${author}</li>
-      <li id="status">${requestStatus} - ${localData} ${localTime}</li>
-      <li>${document.getElementById('return').value}</li>
-    </ul>
-    `
-   )
 
-   const listaProcessamentos = mensagens.join('')
+   if (document.getElementById('return').value === '') {
+
+      messages.push(
+         `
+       <ul id="included-processing">
+         <li id="request-author">${author}</li>
+         <li id="status">${requestStatus} - ${localData} ${localTime}</li>
+       </ul>
+       `
+      )
+   } else {
+
+      messages.push(
+         `
+       <ul id="included-processing">
+         <li id="request-author">${author}</li>
+         <li id="status">${requestStatus} - ${localData} ${localTime}</li>
+         <li>${document.getElementById('return').value}</li>
+       </ul>
+       `
+      )
+   }
+
+   const listaProcessamentos = messages.join('')
 
    document.getElementById('current-processing').innerHTML =
       listaProcessamentos
