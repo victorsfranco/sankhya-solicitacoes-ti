@@ -22,7 +22,7 @@ function showAttachment() {
 }
 
 //Função Oculta Detalhes da O.S
-const requestDetails = document.getElementById('request-details-list')
+const requestDetails = document.getElementById('request-details-body');
 
 let detailsAreVisible = true
 
@@ -30,7 +30,7 @@ document.getElementById('hide-request-details-button').innerHTML = '-'
 
 function hideRequestDetails() {
    if (detailsAreVisible == true) {
-      requestDetails.style.display = 'none'
+      requestDetails.style.display = 'none';
       document.getElementById('hide-request-details-button').innerHTML = '+'
       detailsAreVisible = false
    } else if (detailsAreVisible == false) {
@@ -147,12 +147,7 @@ document.getElementById('request-status').innerHTML = 'Encerrada'
 //Descrição da O.S:
 document.getElementById(
    'request-description'
-).innerHTML = `<br>Boa tarde. Na tela Contratos de T.I , estou obtendo o erro
-apresentado na foto em anexo ao tentar alterar o TIPO DE CONTRATO
-do lançamento nº 1 . Desejo alterar o TIPO DE CONTRATO de
-"INTERNET" para "PRESTAÇÃO DE SERVIÇOS", e não estou conseguindo
-devido a esse erro. Obs: O erro acontece tambem em outros
-lançamentos.`
+).innerHTML = `Boa tarde. Na tela Contratos de T.I , estou obtendo o erro apresentado na foto em anexo ao tentar alterar o TIPO DE CONTRATO do lançamento nº 1 . Desejo alterar o TIPO DE CONTRATO de "INTERNET" para "PRESTAÇÃO DE SERVIÇOS", e não estou conseguindo devido a esse erro. Obs: O erro acontece tambem em outros lançamentos.`
 
 //Inclusão do Processamento da O.S:
 

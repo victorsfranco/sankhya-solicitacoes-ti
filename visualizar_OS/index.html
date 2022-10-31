@@ -28,26 +28,35 @@
 				<button onclick="hideRequestDetails()" class="toggle-view-button" id="hide-request-details-button"></button>
 			</div>
 
-			<ul id="request-details-list">
-				<li class="detail-item" id="requester"></li>
+			<div id="request-details-body">
 
-				<li class="detail-item" id="department"></li>
+				<ul id="request-details-list">
+					<li class="detail-item">
+						Usuário de inclusão
+						<span class="details-span" id="requester"></span>
+					</li>
 
-				<li class="detail-item">
-					Sistema:
-					<span id="request-system"></span>
-				</li>
+					<li class="detail-item">
+						Departamento
+						<span class="details-span" id="department"></span>
+					</li>
 
-				<li class="detail-item">
-					Status:
-					<span id="request-status"> Encerrada</span>
-				</li>
+					<li class="detail-item">
+						Sistema
+						<span class="details-span" id="request-system"></span>
+					</li>
 
-				<li class="detail-item" id="details-last-child">
-					Descrição:
-					<span id="request-description"></span>
-				</li>
-			</ul>
+					<li class="detail-item">
+						Status
+						<span class="details-span" id="request-status"> Encerrada</span>
+					</li>
+
+				</ul>
+
+				<p id="description-label">Descrição</p>
+				<p id="request-description"></p>
+			</div>
+
 		</section>
 
 		<section class="container" id="attachments">

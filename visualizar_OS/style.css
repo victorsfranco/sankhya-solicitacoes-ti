@@ -46,8 +46,6 @@ body {
 	position: absolute;
 	left: 0;
 	top: 25.6px;
-
-
 }
 
 #quit-button:hover {
@@ -57,7 +55,6 @@ body {
 	background-color: #2C549C;
 	color: #ffffff
 }
-
 
 main {
 	padding: 2rem 8rem;
@@ -116,6 +113,10 @@ main {
 	justify-content: space-between;
 }
 
+#request-details-body {
+	background-color: #ffffff;
+}
+
 #request-details h3 {
 	font-family: 'Inter';
 }
@@ -125,22 +126,34 @@ main {
 }
 
 #request-details-list {
+	display: flex;
+	justify-content: space-between;
 	background-color: #ffffff;
 	padding: 1rem;
 	list-style-type: none;
 }
 
-#requester {
-	color: #2C549C;
-	font-weight: 700;
-}
-
 .detail-item {
+	display: flex;
+	flex-direction: column;
 	padding-bottom: 0.5rem;
+	margin-right: 1.5rem;
 }
 
-#details-last-child {
-	padding-bottom: 0;
+.details-span {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+#description-label {
+	background-color: #ffffff;
+	margin: 0 1rem;
+}
+
+#request-description {
+	background-color: #ffffff;
+	margin: 0.1rem 1rem 1rem 1rem;
+	line-break: anywhere;
 }
 
 /* --- Anexos --- */
