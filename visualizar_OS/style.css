@@ -147,10 +147,13 @@ main {
 
 #description-label {
 	background-color: #ffffff;
-	margin: 0 1rem;
+	margin: 0.5rem 1rem;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #ddd;
 }
 
 #request-description {
+	font-weight: 400;
 	background-color: #ffffff;
 	margin: 0.1rem 1rem 1rem 1rem;
 	line-break: anywhere;
@@ -237,6 +240,7 @@ main {
 }
 
 #current-processing {
+	padding-top: 0.5rem;
 	display: none;
 	background-color: #ffffff;
 }
