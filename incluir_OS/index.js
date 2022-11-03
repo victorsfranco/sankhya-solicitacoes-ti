@@ -10,10 +10,10 @@ document.querySelector('#request-system').addEventListener('change', (event) => 
    requestSystem = event.target.value;
 })
 
-let problemLocation = document.querySelector('#problem-location').value;
+let issueScreen = document.querySelector('#issue-screen').value;
 
-document.querySelector('#problem-location').addEventListener('change', (event) => {
-   problemLocation = event.target.value
+document.querySelector('#issue-screen').addEventListener('change', (event) => {
+   issueScreen = event.target.value
 })
 
 let descriptionText = document.querySelector('#description-text').value;
@@ -26,7 +26,7 @@ function saveRequest() {
    const requestData = {
       title: requestTitle,
       system: requestSystem,
-      location: problemLocation,
+      screen: issueScreen,
       description: descriptionText,
 
    }
