@@ -175,3 +175,18 @@ header button {
 	padding: 1.25rem 0rem;
 	min-width: 200px;
 }
+
+.request-status {
+	padding: 6px 12px;
+	border-radius: 8px;
+}
+
+.inAttendance {
+	background-color: #FFFAF1;
+	color: #CB8A14;
+}
+
+.completed {
+	background-color: #F5FBF8;
+	color: #359A73;
+}
