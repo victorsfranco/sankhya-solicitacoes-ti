@@ -151,7 +151,8 @@ header button {
 .table-header {
 	border-bottom: 1px solid #F2F2F2;
 	display: grid;
-	grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr;
+	grid-template-columns: 10% 25% 25% 10% 10% 20%;
+	/* grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr; */
 }
 
 .table-header-label {
@@ -165,7 +166,8 @@ header button {
 .request-informations {
 	border-bottom: 1px solid #F2F2F2;
 	display: grid;
-	grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr;
+	grid-template-columns: 10% 25% 25% 10% 10% 20%;
+	/* grid-template-columns: 1fr 2fr 2fr 1fr 1fr 2fr; */
 }
 
 .request-data {
