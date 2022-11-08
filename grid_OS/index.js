@@ -1,7 +1,7 @@
 const statusElements = document.querySelectorAll('.request-status');
 const requestStatus = Array.from(statusElements);
 
-requestStatus.map((item) => {
+requestStatus.forEach((item) => {
   if (item.textContent === 'Concluída' || item.textContent === 'Encerrada') {
     item.classList.add('completed');
   } else if (item.textContent === 'Cancelada') {
@@ -10,3 +10,5 @@ requestStatus.map((item) => {
     item.classList.add('inAttendance');
   }
 })
+
+
