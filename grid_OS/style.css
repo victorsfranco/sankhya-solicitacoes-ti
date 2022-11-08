@@ -190,3 +190,8 @@ header button {
 	background-color: #F5FBF8;
 	color: #359A73;
 }
+
+.canceled {
+	background-color: #fff1f1;
+	color: #9a3535;
+}
