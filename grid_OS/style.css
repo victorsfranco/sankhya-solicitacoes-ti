@@ -113,6 +113,10 @@ input[type=checkbox] {
 	margin: 0.5rem;
 }
 
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
 .buttons {
 	color: #FFFFFF;
 	background-color: #2C549C;

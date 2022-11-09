@@ -11,4 +11,36 @@ requestStatus.forEach((item) => {
   }
 })
 
+let statusAll = document.querySelector('#todos');
+
+statusAll.addEventListener('change', (event) => {
+  statusAll = event.target.checked;
+
+  let statusCheckbox = document.querySelectorAll('.status-checkbox');
+
+  if (statusAll === true) {
+    statusCheckbox.forEach((item) => {
+      item.checked = true;
+    })
+
+  } else if (statusAll === false) {
+    statusCheckbox.forEach((item) => {
+      item.checked = false;
+    })
+  }
+
+})
+
+document.querySelectorAll('.status-checkbox').forEach((item) => {
+  item.addEventListener('change', (event) => {
+    let allBoxesChecked = event.target.checked;
+
+    if (allBoxesChecked === false) {
+      document.querySelector('#todos').checked = false
+    }
+
+  })
+
+});
+
 
